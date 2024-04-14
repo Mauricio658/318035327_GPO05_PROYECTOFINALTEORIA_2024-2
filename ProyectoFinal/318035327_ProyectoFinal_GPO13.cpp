@@ -145,11 +145,8 @@ int main()
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
 	
-	Model Piso((char*)"Models/Esfera/Piso.obj");
-	Model Esfera((char*)"Models/Esfera/esfera02.obj");
-	Model Foco((char*)"Models/Foco/Foco.obj");
+	Model Piso((char*)"Models/Pasto/Piso.obj");
 	glUniform1f(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1.0);
-	Model Box((char*)"Models/Box/box.obj");
 	Model Fachada((char*)"Models/Modelo_Casa_Objetos/modelo_Casa.obj");
 	Model objeto01((char*)"Models/Modelo_Casa_Objetos/objeto_01.obj");
 	Model objeto02((char*)"Models/Modelo_Casa_Objetos/objeto_02.obj");
