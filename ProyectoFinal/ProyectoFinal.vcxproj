@@ -22,7 +22,7 @@
     <ClInclude Include="Model.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MainPrueba.cpp" />
+    <ClCompile Include="318035327_ProyectoFinal_GPO13.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
