@@ -25,8 +25,8 @@
 #include "Model.h"
 
 // Function prototypes
-void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode);
-void MouseCallback(GLFWwindow *window, double xPos, double yPos);
+void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode);
+void MouseCallback(GLFWwindow* window, double xPos, double yPos);
 void DoMovement();
 
 // Window dimensions
@@ -39,57 +39,6 @@ GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
 bool firstMouse = true;
-// Light attributes
-
-
-float vertices[] = {
-	 -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	   -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	   -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-
-	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-	   -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-
-	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-
-		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-
-	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	   -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-
-	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	   -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
-};
-
-
-
-
-
 
 // Deltatime
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
@@ -99,12 +48,6 @@ int main()
 {
 	// Init GLFW
 	glfwInit();
-	// Set all the required options for GLFW
-	/*glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-	glfwWindowHint(GLFW_RESIZABLE, GL_FALSE);*/
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
 	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Iluminacion 2", nullptr, nullptr);
@@ -144,14 +87,14 @@ int main()
 
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
-	
+
 	Model Piso((char*)"Models/Pasto/Piso.obj");
 	glUniform1f(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1.0);
 	Model Fachada((char*)"Models/Modelo_Casa_Objetos/modelo_Casa.obj");
-	Model objeto01((char*)"Models/Modelo_Casa_Objetos/objeto_01.obj");
-	Model objeto02((char*)"Models/Modelo_Casa_Objetos/objeto_02.obj");
-	Model objeto03((char*)"Models/Modelo_Casa_Objetos/objeto_03.obj");
-	Model objeto04((char*)"Models/Modelo_Casa_Objetos/objeto_04.obj");
+	Model objeto01((char*)"Models/Modelo_Casa_Objetos/objeto_extra_01.obj");
+	Model objeto02((char*)"Models/Modelo_Casa_Objetos/modelo_sala.obj");
+	Model objeto03((char*)"Models/Modelo_Casa_Objetos/modelo_sala_estudio.obj");
+	Model objeto04((char*)"Models/Modelo_Casa_Objetos/objeto_03.obj");
 	Model objeto05((char*)"Models/Modelo_Casa_Objetos/objeto_05.obj");
 
 
@@ -161,14 +104,6 @@ int main()
 	glGenBuffers(1, &VBO);
 	glBindVertexArray(VAO);
 	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-	// Position attribute
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(GLfloat), (GLvoid*)0);
-	glEnableVertexAttribArray(0);
-	// normal attribute
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)(3 * sizeof(float)));
-	glEnableVertexAttribArray(1);
-
 	// Set texture units
 	lightingShader.Use();
 
@@ -191,20 +126,14 @@ int main()
 		// Clear the colorbuffer
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	   
+
 		// OpenGL options
 		glEnable(GL_DEPTH_TEST);
-
-		
-		
 		//Load Model
-	
-
 		// Use cooresponding shader when setting uniforms/drawing objects
 		lightingShader.Use();
-
-                  glUniform1i(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0);
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"),1);
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0);
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"), 1);
 
 		GLint viewPosLoc = glGetUniformLocation(lightingShader.Program, "viewPos");
 		glUniform3f(viewPosLoc, camera.GetPosition().x, camera.GetPosition().y, camera.GetPosition().z);
@@ -232,56 +161,29 @@ int main()
 		// Pass the matrices to the shader
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
-
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.0f);
 		glm::mat4 model(1);
 
-	
-
 		//Carga de modelo 
-        view = camera.GetViewMatrix();	
+		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//Pasto de la pratica 80
 		Piso.Draw(lightingShader);
-		//Casa
 
+		//Casa
 		Fachada.Draw(lightingShader);
 		objeto01.Draw(lightingShader);
 		objeto02.Draw(lightingShader);
 		objeto03.Draw(lightingShader);
 		objeto04.Draw(lightingShader);
 		objeto05.Draw(lightingShader);
-
-		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		model = glm::mat4(1);
-		
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.0f);
-
-		
-
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-
-		glDisable(GL_BLEND);  //Desactiva el canal alfa 
-		glBindVertexArray(0);
-	
-
-		
-		glDrawArrays(GL_TRIANGLES, 0, 36);
-		glBindVertexArray(0);
-
-
+		//glBindVertexArray(0);
 		// Swap the screen buffers
 		glfwSwapBuffers(window);
 	}
-
-
 	// Terminate GLFW, clearing any resources allocated by GLFW.
 	glfwTerminate();
-
-
-
 	return 0;
 }
 
@@ -293,34 +195,27 @@ void DoMovement()
 	if (keys[GLFW_KEY_W] || keys[GLFW_KEY_UP])
 	{
 		camera.ProcessKeyboard(FORWARD, deltaTime);
-
 	}
 
 	if (keys[GLFW_KEY_S] || keys[GLFW_KEY_DOWN])
 	{
 		camera.ProcessKeyboard(BACKWARD, deltaTime);
-
-
 	}
 
 	if (keys[GLFW_KEY_A] || keys[GLFW_KEY_LEFT])
 	{
 		camera.ProcessKeyboard(LEFT, deltaTime);
-
-
 	}
 
 	if (keys[GLFW_KEY_D] || keys[GLFW_KEY_RIGHT])
 	{
 		camera.ProcessKeyboard(RIGHT, deltaTime);
-
-
 	}
 
 }
 
 // Is called whenever a key is pressed/released via GLFW
-void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode)
+void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
 	if (GLFW_KEY_ESCAPE == key && GLFW_PRESS == action)
 	{
@@ -343,7 +238,7 @@ void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode
 
 
 
-void MouseCallback(GLFWwindow *window, double xPos, double yPos)
+void MouseCallback(GLFWwindow* window, double xPos, double yPos)
 {
 	if (firstMouse)
 	{
