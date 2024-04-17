@@ -1,4 +1,4 @@
-newmtl modelo_Casa3:lambert5SG
+newmtl modelo_Casa4:lambert5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.84 0.84 0.84
@@ -8,7 +8,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_ventana_madera.png
 Ns 18.00
-newmtl modelo_Casa3:lambert6SG
+newmtl modelo_Casa4:lambert6SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -18,7 +18,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_ventana_madera.png
 Ns 18.00
-newmtl modelo_Casa3:lambert7SG
+newmtl modelo_Casa4:lambert7SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -28,7 +28,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_paredes.png
 Ns 18.00
-newmtl modelo_Casa3:lambert8SG
+newmtl modelo_Casa4:lambert8SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -38,7 +38,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_columna.png
 Ns 18.00
-newmtl modelo_Casa3:lambert9SG
+newmtl modelo_Casa4:lambert9SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -48,7 +48,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_tejado.png
 Ns 18.00
-newmtl modelo_Casa3:pasted__lambert6SG1
+newmtl modelo_Casa4:pasted__lambert6SG1
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -58,7 +58,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_ventana_madera.png
 Ns 18.00
-newmtl modelo_Casa3:phong1SG
+newmtl modelo_Casa4:phong1SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -68,7 +68,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_piso.png
 Ns 18.00
-newmtl modelo_Casa3:phong2SG
+newmtl modelo_Casa4:phong2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -78,7 +78,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_piso_interior.png
 Ns 18.00
-newmtl modelo_Casa3:phong4SG
+newmtl modelo_Casa4:phong4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -87,7 +87,7 @@ map_Kd textura_columna_tejado.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl modelo_Casa3:phong5SG
+newmtl modelo_Casa4:phong5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -97,7 +97,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_columna_madera.png
 Ns 18.00
-newmtl modelo_Casa3:phong7SG
+newmtl modelo_Casa4:phong7SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -107,7 +107,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_columna.png
 Ns 18.00
-newmtl modelo_Casa3:phong8SG
+newmtl modelo_Casa4:phong8SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -117,7 +117,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_ventana_vidrio.png
 Ns 18.00
-newmtl modelo_Casa3:phong9SG
+newmtl modelo_Casa4:phong9SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -126,7 +126,7 @@ map_Kd textura_vidrio_ventana.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl modelo_Casa3:phong10SG
+newmtl modelo_Casa4:phong10SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -136,7 +136,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_puerta.png
 Ns 18.00
-newmtl modelo_Casa3:phong11SG
+newmtl modelo_Casa4:phong11SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -146,7 +146,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_tejado.png
 Ns 18.00
-newmtl modelo_Casa3:phong13SG
+newmtl modelo_Casa4:phong13SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -156,7 +156,7 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_tejado.png
 Ns 18.00
-newmtl modelo_Casa3:phong14SG
+newmtl modelo_Casa4:phong14SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -165,383 +165,526 @@ map_Kd textura_ventana.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl objeto01_Silla:pasted__lambert3SG1
+newmtl objeto01_Silla1:pasted__lambert3SG1
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd madera_silla.png
 Ni 1.00
-newmtl objeto01_Silla:pasted__lambert4SG1
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_silla.png
+Ns 18.00
+newmtl objeto01_Silla1:pasted__lambert4SG1
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.48 0.48 0.48
 Tf 0.96 0.96 0.96
 map_Kd tela_silla.png
 Ni 1.00
-newmtl objeto01_Silla:pasted__lambert5SG1
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_silla.png
+Ns 18.00
+newmtl objeto01_Silla1:pasted__lambert5SG1
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd tela_silla.png
 Ni 1.00
-newmtl objeto02_sofa1:phong3SG
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_silla.png
+Ns 18.00
+newmtl objeto02_sofa3:phong3SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd tela_sillon.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_almohada.png
 Ns 18.00
-newmtl objeto02_sofa1:phong4SG
+newmtl objeto02_sofa3:phong4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd pies_sillon.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
 Ns 18.00
-newmtl objeto02_sofa1:phong5SG
+newmtl objeto02_sofa3:phong5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd almohada_sillon.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_almohada_.png
 Ns 18.00
-newmtl objeto02_sofa2:phong3SG
+newmtl objeto02_sofa4:phong3SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd tela_sillon.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_almohada.png
 Ns 18.00
-newmtl objeto02_sofa2:phong4SG
+newmtl objeto02_sofa4:phong4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd pies_sillon.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
 Ns 18.00
-newmtl objeto02_sofa2:phong5SG
+newmtl objeto02_sofa4:phong5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd almohada_sillon.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_almohada_.png
 Ns 18.00
-newmtl objeto03_librero2:initialShadingGroup
+newmtl objeto02_sofa5:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tela_sillon.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_almohada.png
+Ns 18.00
+newmtl objeto02_sofa5:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pies_sillon.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
+Ns 18.00
+newmtl objeto02_sofa5:phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd almohada_sillon.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_almohada_.png
+Ns 18.00
+newmtl objeto03_librero3:initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro01.png
 Ni 1.00
-newmtl objeto03_librero2:lambert2SG
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto03_librero3:lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_librero.png
 Ni 1.00
-newmtl objeto03_librero2:lambert3SG
+Ks 0.00 0.00 0.00
+map_Ks especular_librero.png
+Ns 18.00
+newmtl objeto03_librero3:lambert3SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_ovillo.png
 Ni 1.00
-newmtl objeto03_librero2:lambert4SG
+newmtl objeto03_librero3:lambert4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_ovillo.png
 Ni 1.00
-newmtl objeto03_librero2:lambert5SG
+newmtl objeto03_librero3:lambert5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:lambert6SG
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto03_librero3:lambert6SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:lambert7SG
+newmtl objeto03_librero3:lambert7SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert5SG
+newmtl objeto03_librero3:pasted__lambert5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert5SG1
+newmtl objeto03_librero3:pasted__lambert5SG1
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert5SG2
+newmtl objeto03_librero3:pasted__lambert5SG2
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert5SG3
+newmtl objeto03_librero3:pasted__lambert5SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert6SG
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto03_librero3:pasted__lambert6SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert6SG2
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto03_librero3:pasted__lambert6SG2
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert6SG3
+newmtl objeto03_librero3:pasted__lambert6SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert6SG4
+newmtl objeto03_librero3:pasted__lambert6SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert6SG6
+newmtl objeto03_librero3:pasted__lambert6SG8
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert7SG
+newmtl objeto03_librero3:pasted__lambert7SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert7SG2
+newmtl objeto03_librero3:pasted__lambert7SG2
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert7SG4
+newmtl objeto03_librero3:pasted__lambert7SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert7SG6
+newmtl objeto03_librero3:pasted__lambert7SG6
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__lambert7SG8
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto03_librero3:pasted__lambert7SG8
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert5SG
+newmtl objeto03_librero3:pasted__pasted__lambert5SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert5SG3
+newmtl objeto03_librero3:pasted__pasted__lambert5SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert5SG5
+newmtl objeto03_librero3:pasted__pasted__lambert5SG5
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert6SG3
+newmtl objeto03_librero3:pasted__pasted__lambert6SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert6SG4
+newmtl objeto03_librero3:pasted__pasted__lambert6SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert6SG7
+newmtl objeto03_librero3:pasted__pasted__lambert6SG7
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert7SG3
+newmtl objeto03_librero3:pasted__pasted__lambert7SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert7SG5
+newmtl objeto03_librero3:pasted__pasted__lambert7SG5
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__lambert7SG7
+newmtl objeto03_librero3:pasted__pasted__lambert7SG7
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__lambert5SG3
+newmtl objeto03_librero3:pasted__pasted__pasted__lambert5SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__lambert5SG5
+newmtl objeto03_librero3:pasted__pasted__pasted__lambert5SG5
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__lambert6SG4
+newmtl objeto03_librero3:pasted__pasted__pasted__lambert6SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__lambert6SG6
+newmtl objeto03_librero3:pasted__pasted__pasted__lambert6SG6
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__lambert7SG4
+newmtl objeto03_librero3:pasted__pasted__pasted__lambert7SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__lambert7SG6
+newmtl objeto03_librero3:pasted__pasted__pasted__lambert7SG6
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__pasted__lambert5SG3
+newmtl objeto03_librero3:pasted__pasted__pasted__pasted__lambert5SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__pasted__lambert5SG4
+newmtl objeto03_librero3:pasted__pasted__pasted__pasted__lambert5SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro02.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__pasted__lambert6SG4
+newmtl objeto03_librero3:pasted__pasted__pasted__pasted__lambert6SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro03.png
 Ni 1.00
-newmtl objeto03_librero2:pasted__pasted__pasted__pasted__lambert7SG4
+newmtl objeto03_librero3:pasted__pasted__pasted__pasted__lambert7SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_libro04.png
 Ni 1.00
-newmtl objeto04_escritorio:lambert2SG
+newmtl objeto04_escritorio2:lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd textura_escritorio.png
+map_Kd Bookshelf_BaseColor.png
 Ni 1.00
-newmtl objeto04_escritorio:pasted__lambert2SG
+Ks 0.00 0.00 0.00
+map_Ks especular_librero.png
+Ns 18.00
+newmtl objeto04_escritorio2:pasted__lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd textura_escritorio.png
+map_Kd Bookshelf_BaseColor.png
 Ni 1.00
-newmtl objeto04_escritorio:pasted__pasted__lambert2SG
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto04_escritorio2:pasted__pasted__lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd textura_escritorio.png
+map_Kd Bookshelf_BaseColor.png
 Ni 1.00
-newmtl objeto05_biombo:PhysicalMaterial
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto04_escritorio2:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+map_Kd color_hoja.png
+Ni 1.50
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 0.06
+newmtl objeto04_escritorio2:phong17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_pluma.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl objeto04_escritorio2:phong19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_envase.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_envase.png
+Ns 18.00
+newmtl objeto04_escritorio2:phong20SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_candelero.png
+Ns 18.00
+newmtl objeto04_escritorio2:phong22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vela.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_vela.png
+Ns 18.00
+newmtl objeto04_escritorio2:phong23SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_candelero.png
+Ns 18.00
+newmtl objeto04_escritorio2:phong24SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vela.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_vela.png
+Ns 18.00
+newmtl objeto04_escritorio2:phongE1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.06
+newmtl objeto05_biombo1:PhysicalMaterial
 illum 4
 Kd 0.50 0.50 0.50
 Ka 0.40 0.40 0.40
@@ -549,37 +692,153 @@ Tf 1.00 1.00 1.00
 Ni 1.52
 Ks 1.00 1.00 1.00
 Ns 0.06
-newmtl objeto05_biombo:lambert2SG
+newmtl objeto05_biombo1:lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd tapiz_biombo_02.png
 Ni 1.00
-newmtl objeto05_biombo:lambert3SG
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objeto05_biombo1:lambert3SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd tapiz_biombo_03.png
 Ni 1.00
-newmtl objeto05_biombo:lambert4SG
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objeto05_biombo1:lambert4SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd tapiz_biombo_04.png
 Ni 1.00
-newmtl objeto05_biombo:phong1SG
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objeto05_biombo1:phong1SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd madera_Biombo.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
 Ns 18.00
-newmtl objeto05_biombo:phong2SG
+newmtl objeto05_biombo1:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd chimenea_exterior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_partearriba.png
+Ns 18.00
+newmtl objeto05_biombo1:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tapiz_biombo_01.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objeto05_biombo1:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd madera_Biombo.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto05_biombo1:phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd reja_madera.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objeto05_biombo1:phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd imagen_luces.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_luces.png
+Ns 18.00
+newmtl objeto_Extra_02:phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pies_sillon.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
+Ns 18.00
+newmtl objeto_Extra_03:phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd mueble_blanco.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks mueble_blanco.png
+Ns 18.00
+newmtl objeto_Extra_04:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tapete.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso.png
+Ns 18.00
+newmtl objeto_Extra_06:Foregrou
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.33 0.33 0.33
+Ns 0.06
+newmtl objeto_Extra_06:FrontCol
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.40 0.40 0.40
+Tf 1.00 1.00 1.00
+Ni 1.50
+Ks 0.33 0.33 0.33
+Ns 0.06
+newmtl objeto_Extra_06:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.24 0.24 0.24
+Tf 0.99 0.99 0.99
+map_Kd madera.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_chimenea.png
+Ns 18.00
+newmtl objeto_Extra_06:pasted__phong3SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -588,39 +847,42 @@ map_Kd chimenea_exterior.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl objeto05_biombo:phong3SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd tapiz_biombo_01.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl objeto05_biombo:phong4SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd madera_Biombo.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl objeto05_biombo:phong5SG
+newmtl objeto_Extra_06:phong1SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd reja_madera.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
 Ns 18.00
-newmtl objeto05_biombo:phong6SG
+newmtl objeto_Extra_06:phong2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd imagen_luces.png
+map_Kd chimenea_exterior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl objeto_Extra_06:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd chimenea_exterior.png
 Ni 1.00
 Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto_Extra_07:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tapete.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso.png
 Ns 18.00
