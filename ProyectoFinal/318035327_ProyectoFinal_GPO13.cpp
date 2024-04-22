@@ -30,7 +30,7 @@ void MouseCallback(GLFWwindow* window, double xPos, double yPos);
 void DoMovement();
 
 // Window dimensions
-const GLuint WIDTH = 1200, HEIGHT = 800;
+const GLuint WIDTH = 1700, HEIGHT = 1200;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
@@ -39,7 +39,15 @@ GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
 bool firstMouse = true;
+//========================================================================
+//Variables para la animación sencilla 01 -> Puertas de la Entrada
+bool animacion_01 = false;
+bool puertaCerrada = false;
+const float MAXIMA_APERTURA = 75;
+float bisagras_puertas = 0.0f;
+float incremento_bisagras = 0.07f;
 
+//========================================================================
 // Deltatime
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
@@ -50,7 +58,7 @@ int main()
 	glfwInit();
 
 	// Create a GLFWwindow object that we can use for GLFW's functions
-	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "Iluminacion 2", nullptr, nullptr);
+	GLFWwindow* window = glfwCreateWindow(WIDTH, HEIGHT, "318035327_ProyectoFinal_GPO13", nullptr, nullptr);
 
 	if (nullptr == window)
 	{
@@ -69,7 +77,7 @@ int main()
 	glfwSetCursorPosCallback(window, MouseCallback);
 
 	// GLFW Options
-	//glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
 	// Set this to true so GLEW knows to use a modern approach to retrieving function pointers and extensions
 	glewExperimental = GL_TRUE;
@@ -90,12 +98,25 @@ int main()
 
 	Model Piso((char*)"Models/Pasto/Piso.obj");
 	glUniform1f(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1.0);
-	Model Fachada((char*)"Models/Modelo_Casa_Objetos/modelo_Casa.obj");
-	Model objeto01((char*)"Models/Modelo_Casa_Objetos/objeto_extra_01.obj");
-	Model objeto02((char*)"Models/Modelo_Casa_Objetos/modelo_sala.obj");
-	Model objeto03((char*)"Models/Modelo_Casa_Objetos/modelo_sala_estudio.obj");
-	Model objeto04((char*)"Models/Modelo_Casa_Objetos/objeto_03.obj");
-	Model objeto05((char*)"Models/Modelo_Casa_Objetos/objeto_05.obj");
+	Model Fachada((char*)"Models/Modelo_Casa/modelo_Casa.obj");
+	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
+	Model Puerta_Der((char*)"Models/Modelo_Casa/door_Right.obj");
+
+	Model objeto01((char*)"Models/Objeto_01/objeto_01.obj");
+	Model objeto02((char*)"Models/Objeto_02/objeto_02.obj");
+	Model objeto03((char*)"Models/Objeto_03/objeto_03.obj");
+	Model objeto04((char*)"Models/Objeto_04/objeto_04.obj");
+	Model objeto05((char*)"Models/Objeto_05/objeto_05.obj");
+	Model objeto06((char*)"Models/Objeto_06/objeto_06.obj");
+	Model objeto07((char*)"Models/Objeto_07/objeto_07.obj");
+
+	Model objetoExtra01((char*)"Models/objeto_Extra_01/objetoExtra_01.obj");
+	Model objetoExtra02((char*)"Models/objeto_Extra_02/objetoExtra_02.obj");
+	Model objetoExtra03((char*)"Models/objeto_Extra_03/objetoExtra_03.obj");
+	Model objetoExtra04((char*)"Models/objeto_Extra_04/objetoExtra_04.obj");
+	Model objetoExtra05((char*)"Models/objeto_Extra_05/objetoExtra_05.obj");
+	Model objetoExtra06((char*)"Models/objeto_Extra_06/objetoExtra_06.obj");
+
 
 
 	// First, set the container's VAO (and VBO)
@@ -163,21 +184,68 @@ int main()
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.0f);
 		glm::mat4 model(1);
+		glm::mat4 model_Bisagra_izq(1);//Matriz Temporal para bisagras.
+		glm::mat4 model_Bisagra_der(1);//Matriz Temporal para bisagras.
+		//glm::mat4 model_aux2(1);
 
 		//Carga de modelo 
 		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
+		model_Bisagra_izq = glm::mat4(1);
+		model_Bisagra_der = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+
+		//========================================================================================
 		//Pasto de la pratica 80
 		Piso.Draw(lightingShader);
+		//========================================================================================
 
+
+		//========================================================================================
 		//Casa
 		Fachada.Draw(lightingShader);
+		//========================================================================================
+
+		//========================================================================================
+		//Puertas derecha
+		model = glm::mat4(1);
+		model_Bisagra_der = model = glm::translate(model, glm::vec3(6.86f, 7.83f, 4.39f));//Matriz temporal para el pivote de apertura
+		model = glm::rotate(model_Bisagra_der, glm::radians(bisagras_puertas), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-3.39f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Puerta_Der.Draw(lightingShader);
+		//========================================================================================
+
+
+		//========================================================================================
+		//Puerta izquierda
+		model = glm::mat4(1);
+		model_Bisagra_izq = model = glm::translate(model, glm::vec3(-6.86f, 7.83f, 4.39f));//Matriz temporal para el pivote de apertura
+		model = glm::rotate(model_Bisagra_izq, glm::radians(-bisagras_puertas), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(3.39f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Puerta_Izq.Draw(lightingShader);
+		//========================================================================================
+
+
+		//========================================================================================
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto01.Draw(lightingShader);
 		objeto02.Draw(lightingShader);
 		objeto03.Draw(lightingShader);
 		objeto04.Draw(lightingShader);
 		objeto05.Draw(lightingShader);
+		objeto06.Draw(lightingShader);
+		objeto07.Draw(lightingShader);
+
+		objetoExtra01.Draw(lightingShader);
+		objetoExtra02.Draw(lightingShader);
+		objetoExtra03.Draw(lightingShader);
+		objetoExtra04.Draw(lightingShader);
+		objetoExtra05.Draw(lightingShader);
+		objetoExtra06.Draw(lightingShader);
+
 		//glBindVertexArray(0);
 		// Swap the screen buffers
 		glfwSwapBuffers(window);
@@ -211,7 +279,27 @@ void DoMovement()
 	{
 		camera.ProcessKeyboard(RIGHT, deltaTime);
 	}
-
+	//===================================================================
+	//Animación para realizar la apertura
+	if (puertaCerrada) {
+		if (bisagras_puertas < MAXIMA_APERTURA) { //Si la apertura es menor al máximo
+			bisagras_puertas += incremento_bisagras; //incrementamos las bisagras
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_01 = false;
+		}
+	}
+	else {
+		if (bisagras_puertas >= 0) {
+			bisagras_puertas -= incremento_bisagras;
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_01 = false;
+		}
+	}
+	//===================================================================
 }
 
 // Is called whenever a key is pressed/released via GLFW
@@ -233,7 +321,22 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 			keys[key] = false;
 		}
 	}
-
+	//==================================================================================================
+	//Tecla Espacio para activar la animación 1 -> Apertura de Puertas Principal
+	if (!animacion_01) {
+		if (key == GLFW_KEY_SPACE && action == GLFW_PRESS)
+		{
+			// Si la puerta está cerrada, abrir
+			if (puertaCerrada) {
+				puertaCerrada = false; // La puerta se cierra
+			}
+			else { // Si la puertaa está abierta, cerrar
+				puertaCerrada = true; // La puerta está cerrada nuevamente
+			}
+			animacion_01 = true;
+		}
+	}
+	//==================================================================================================
 }
 
 
