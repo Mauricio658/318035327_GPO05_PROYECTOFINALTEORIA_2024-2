@@ -34,7 +34,7 @@ const GLuint WIDTH = 1900, HEIGHT = 1200;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
-Camera  camera(glm::vec3(0.0f, 0.0f, 3.0f));
+Camera  camera(glm::vec3(0.0f, 6.0f, 6.0f));
 GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
@@ -60,6 +60,35 @@ float bisagras_librero_der = 0.0f;
 const float MAXIMA_APERTURA_LIBRERO_IZQ = 105;
 const float MAXIMA_APERTURA_LIBRERO_DER = 82;
 //========================================================================
+//Variables para la aimación sencilla 03 -> Libro 01
+bool animacion_02_libro01 = false;
+bool libro_trasladado1 = false;
+float rotacion_ejey = 0.0f;
+float rotacion_ejez = 0.0f;
+const float ROTACION_MAXIMA_Y = 90;
+const float INCLINACION_MAXIMA = 15;
+const float velocidad_rotacion = 0.5;
+const float velocidad_traslacion = 0.07;
+const float TRASLACION_MAXIMA = 2.0;
+float traslacion_libro01 = 0.0f;
+
+//========================================================================================
+//Variables para la aimación sencilla 03 -> Libro 02
+bool animacion_02_libro02 = false;
+bool libro_trasladado2 = false;
+float rotacion_ejey1 = 0.0f;
+float rotacion_ejez1 = 0.0f;
+float traslacion_libro02 = 0.0f;
+
+//========================================================================================
+//Variables para la aimación sencilla 03 -> Libro 03
+bool animacion_02_libro03 = false;
+bool libro_trasladado3 = false;
+float rotacion_ejey2 = 0.0f;
+float rotacion_ejez2 = 0.0f;
+float traslacion_libro03 = 0.0f;
+
+//========================================================================================
 // Deltatime
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
@@ -116,9 +145,14 @@ int main()
 
 	Model objeto01((char*)"Models/Objeto_01/objeto_01.obj");
 	Model objeto02((char*)"Models/Objeto_02/objeto_02.obj");
+
 	Model objeto03((char*)"Models/Objeto_03/objeto_03.obj");
 	Model objeto03_Der((char*)"Models/Objeto_03/objeto_03_doorRight.obj");
 	Model objeto03_Izq((char*)"Models/Objeto_03/objeto_03_doorLeft.obj");
+	Model objeto03_Libro01((char*)"Models/Objeto_03/objeto_03_libro01.obj");
+	Model objeto03_Libro02((char*)"Models/Objeto_03/objeto_03_libro02.obj");
+	Model objeto03_Libro03((char*)"Models/Objeto_03/objeto_03_libro03.obj");
+
 	Model objeto04((char*)"Models/Objeto_04/objeto_04.obj");
 	Model objeto05((char*)"Models/Objeto_05/objeto_05.obj");
 	Model objeto06((char*)"Models/Objeto_06/objeto_06.obj");
@@ -197,11 +231,19 @@ int main()
 		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.0f);
+		//======================================================================================
+		//Matrices Auxiliares
 		glm::mat4 model(1);
 		glm::mat4 model_Bisagra_izq(1);//Matriz Temporal para bisagras.
 		glm::mat4 model_Bisagra_der(1);//Matriz Temporal para bisagras.
 		glm::mat4 model_BisagraLibrero_der(1);//Matriz Temporal para bisagras.
 		glm::mat4 model_BisagraLibrero_izq(1);//Matriz Temporal para bisagras.
+		glm::mat4 model1_Libro01(1);//Matriz Temporal para libro 01
+		glm::mat4 model2_Libro01(1);//Matriz Temporal para libro 01		
+		glm::mat4 model1_Libro02(1);//Matriz Temporal para libro 02
+		glm::mat4 model2_Libro02(1);//Matriz Temporal para libro 02
+		glm::mat4 model1_Libro03(1);//Matriz Temporal para libro 03
+		glm::mat4 model2_Libro03(1);//Matriz Temporal para libro 03
 		//glm::mat4 model_aux2(1);
 
 		//Carga de modelo 
@@ -211,18 +253,21 @@ int main()
 		model_Bisagra_der = glm::mat4(1);
 		model_BisagraLibrero_der = glm::mat4(1);
 		model_BisagraLibrero_izq = glm::mat4(1);
+		model1_Libro01 = glm::mat4(1);
+		model2_Libro01 = glm::mat4(1);
+		model1_Libro02 = glm::mat4(1);
+		model2_Libro02 = glm::mat4(1);
+		model1_Libro03 = glm::mat4(1);
+		model2_Libro03 = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
 		//========================================================================================
 		//Pasto de la pratica 80
 		Piso.Draw(lightingShader);
-		//========================================================================================
-
 
 		//========================================================================================
 		//Casa
 		Fachada.Draw(lightingShader);
-		//========================================================================================
 
 		//========================================================================================
 		//Puertas derecha
@@ -259,6 +304,36 @@ int main()
 		model = glm::translate(model, glm::vec3(-1.4f, 0.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto03_Der.Draw(lightingShader);
+
+		//========================================================================================
+		//Libro 01 del librero
+		model = glm::mat4(1);
+		model1_Libro01 = model = glm::translate(model, glm::vec3(24.86f, 10.0f, -21.60f)); //Posición en el librero
+		model2_Libro01 = model = glm::translate(model1_Libro01, glm::vec3(0.0f, 0.0f, traslacion_libro01)); //Posición en el librero
+		model2_Libro01 = model = glm::rotate(model2_Libro01, glm::radians(-rotacion_ejey), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model2_Libro01, glm::radians(rotacion_ejez), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto03_Libro01.Draw(lightingShader);
+
+		//========================================================================================
+		//Libro 02 del librero
+		model = glm::mat4(1);
+		model1_Libro02 = model = glm::translate(model, glm::vec3(23.68f, 7.95f, -21.60f)); //Posición en el librero
+		model2_Libro02 = model = glm::translate(model1_Libro02, glm::vec3(0.0f, 0.0f, traslacion_libro02)); //Posición en el librero
+		model2_Libro02 = model = glm::rotate(model2_Libro02, glm::radians(-rotacion_ejey1), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model2_Libro02, glm::radians(rotacion_ejez1), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto03_Libro02.Draw(lightingShader);
+
+		//========================================================================================
+		//Libro 03 del librero
+		model = glm::mat4(1);
+		model1_Libro03 = model = glm::translate(model, glm::vec3(24.56f, 6.03f, -21.60f)); //Posición en el librero
+		model2_Libro03 = model = glm::translate(model1_Libro03, glm::vec3(0.0f, 0.0f, traslacion_libro03)); //Posición en el librero
+		model2_Libro03 = model = glm::rotate(model2_Libro03, glm::radians(-rotacion_ejey2), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::rotate(model2_Libro03, glm::radians(rotacion_ejez2), glm::vec3(0.0f, 0.0f, 1.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto03_Libro03.Draw(lightingShader);
 
 		//========================================================================================
 		model = glm::mat4(1);
@@ -370,6 +445,122 @@ void DoMovement()
 		}
 	}
 	//===================================================================
+	//Animación para realizar la el movimiento del libro 01 del librero
+	if (libro_trasladado1) {
+		if (traslacion_libro01 < TRASLACION_MAXIMA) {
+			traslacion_libro01 += velocidad_traslacion;
+		}
+		else {
+			if (rotacion_ejey < ROTACION_MAXIMA_Y) {
+				rotacion_ejey += velocidad_rotacion;
+			}
+			else {
+				if (rotacion_ejez < INCLINACION_MAXIMA) {
+					rotacion_ejez += velocidad_rotacion;
+				}
+				else {
+					animacion_02_libro01 = false;
+				}
+			}
+		}
+	}
+	else {
+		if (rotacion_ejez >= 0) {
+			rotacion_ejez -= velocidad_rotacion;
+		}
+		else {
+			if (rotacion_ejey >= 0) {
+				rotacion_ejey -= velocidad_rotacion;
+			}
+			else {
+				if (traslacion_libro01 >= 0) {
+					traslacion_libro01 -= velocidad_traslacion;
+				}
+				else {
+					animacion_02_libro01 = false;
+				}
+			}
+		}
+	}
+	//===================================================================
+	//Animación para realizar la el movimiento del libro 02 del librero
+	if (libro_trasladado2) {
+		if (traslacion_libro02 < TRASLACION_MAXIMA) {
+			traslacion_libro02 += velocidad_traslacion;
+		}
+		else {
+			if (rotacion_ejey1 < ROTACION_MAXIMA_Y) {
+				rotacion_ejey1 += velocidad_rotacion;
+			}
+			else {
+				if (rotacion_ejez1 < INCLINACION_MAXIMA) {
+					rotacion_ejez1 += velocidad_rotacion;
+				}
+				else {
+					animacion_02_libro02 = false;
+				}
+			}
+		}
+	}
+	else {
+		if (rotacion_ejez1 >= 0) {
+			rotacion_ejez1 -= velocidad_rotacion;
+		}
+		else {
+			if (rotacion_ejey1 >= 0) {
+				rotacion_ejey1 -= velocidad_rotacion;
+			}
+			else {
+				if (traslacion_libro02 >= 0) {
+					traslacion_libro02 -= velocidad_traslacion;
+				}
+				else {
+					animacion_02_libro02 = false;
+				}
+			}
+		}
+	}
+
+	//===================================================================
+		//Animación para realizar la el movimiento del libro 02 del librero
+	if (libro_trasladado3) {
+		if (traslacion_libro03 < TRASLACION_MAXIMA) {
+			traslacion_libro03 += velocidad_traslacion;
+		}
+		else {
+			if (rotacion_ejey2 < ROTACION_MAXIMA_Y) {
+				rotacion_ejey2 += velocidad_rotacion;
+			}
+			else {
+				if (rotacion_ejez2 < INCLINACION_MAXIMA) {
+					rotacion_ejez2 += velocidad_rotacion;
+				}
+				else {
+					animacion_02_libro03 = false;
+				}
+			}
+		}
+	}
+	else {
+		if (rotacion_ejez2 >= 0) {
+			rotacion_ejez2 -= velocidad_rotacion;
+		}
+		else {
+			if (rotacion_ejey2 >= 0) {
+				rotacion_ejey2 -= velocidad_rotacion;
+			}
+			else {
+				if (traslacion_libro03 >= 0) {
+					traslacion_libro03 -= velocidad_traslacion;
+				}
+				else {
+					animacion_02_libro03 = false;
+				}
+			}
+		}
+	}
+
+	//===================================================================
 }
 
 // Is called whenever a key is pressed/released via GLFW
@@ -430,6 +621,51 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 				puertaDerCerrada = true;
 			}
 			animacion_02_der = true;
+		}
+	}
+	//==================================================================================================
+	 // Tecla 1 para activar la animación del libro
+	if (!animacion_02_libro01)
+	{
+		if (key == GLFW_KEY_1 && action == GLFW_PRESS)
+		{
+			if (libro_trasladado1) {
+				libro_trasladado1 = false;
+			}
+			else {
+				libro_trasladado1 = true;
+			}
+			animacion_02_libro01 = true;
+		}
+	}
+	//==================================================================================================
+	 // Tecla 2 para activar la animación del libro
+	if (!animacion_02_libro02)
+	{
+		if (key == GLFW_KEY_2 && action == GLFW_PRESS)
+		{
+			if (libro_trasladado2) {
+				libro_trasladado2 = false;
+			}
+			else {
+				libro_trasladado2 = true;
+			}
+			animacion_02_libro02 = true;
+		}
+	}
+	//==================================================================================================
+	 // Tecla 3 para activar la animación del libro
+	if (!animacion_02_libro03)
+	{
+		if (key == GLFW_KEY_3 && action == GLFW_PRESS)
+		{
+			if (libro_trasladado3) {
+				libro_trasladado3 = false;
+			}
+			else {
+				libro_trasladado3 = true;
+			}
+			animacion_02_libro03 = true;
 		}
 	}
 	//==================================================================================================
