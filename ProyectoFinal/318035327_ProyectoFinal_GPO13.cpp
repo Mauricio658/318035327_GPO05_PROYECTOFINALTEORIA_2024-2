@@ -30,7 +30,7 @@ void MouseCallback(GLFWwindow* window, double xPos, double yPos);
 void DoMovement();
 
 // Window dimensions
-const GLuint WIDTH = 1700, HEIGHT = 1200;
+const GLuint WIDTH = 1900, HEIGHT = 1200;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
@@ -45,8 +45,20 @@ bool animacion_01 = false;
 bool puertaCerrada = false;
 const float MAXIMA_APERTURA = 75;
 float bisagras_puertas = 0.0f;
-float incremento_bisagras = 0.07f;
+float incremento_bisagras = 0.3f;
 
+//========================================================================
+//Variables para la animación sencilla 02 -> Puertas del Librero
+bool animacion_02_izq = false;
+bool animacion_02_der = false;
+bool puertaIzqCerrada = false;
+bool puertaDerCerrada = false;
+float bisagra_izq = 0.0f;
+float bisagra_der = 0.0f;
+float bisagras_librero_izq = 0.0f;
+float bisagras_librero_der = 0.0f;
+const float MAXIMA_APERTURA_LIBRERO_IZQ = 105;
+const float MAXIMA_APERTURA_LIBRERO_DER = 82;
 //========================================================================
 // Deltatime
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
@@ -105,6 +117,8 @@ int main()
 	Model objeto01((char*)"Models/Objeto_01/objeto_01.obj");
 	Model objeto02((char*)"Models/Objeto_02/objeto_02.obj");
 	Model objeto03((char*)"Models/Objeto_03/objeto_03.obj");
+	Model objeto03_Der((char*)"Models/Objeto_03/objeto_03_doorRight.obj");
+	Model objeto03_Izq((char*)"Models/Objeto_03/objeto_03_doorLeft.obj");
 	Model objeto04((char*)"Models/Objeto_04/objeto_04.obj");
 	Model objeto05((char*)"Models/Objeto_05/objeto_05.obj");
 	Model objeto06((char*)"Models/Objeto_06/objeto_06.obj");
@@ -186,6 +200,8 @@ int main()
 		glm::mat4 model(1);
 		glm::mat4 model_Bisagra_izq(1);//Matriz Temporal para bisagras.
 		glm::mat4 model_Bisagra_der(1);//Matriz Temporal para bisagras.
+		glm::mat4 model_BisagraLibrero_der(1);//Matriz Temporal para bisagras.
+		glm::mat4 model_BisagraLibrero_izq(1);//Matriz Temporal para bisagras.
 		//glm::mat4 model_aux2(1);
 
 		//Carga de modelo 
@@ -193,6 +209,8 @@ int main()
 		model = glm::mat4(1);
 		model_Bisagra_izq = glm::mat4(1);
 		model_Bisagra_der = glm::mat4(1);
+		model_BisagraLibrero_der = glm::mat4(1);
+		model_BisagraLibrero_izq = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
 		//========================================================================================
@@ -214,8 +232,6 @@ int main()
 		model = glm::translate(model, glm::vec3(-3.39f, 0.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Puerta_Der.Draw(lightingShader);
-		//========================================================================================
-
 
 		//========================================================================================
 		//Puerta izquierda
@@ -225,8 +241,24 @@ int main()
 		model = glm::translate(model, glm::vec3(3.39f, 0.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Puerta_Izq.Draw(lightingShader);
-		//========================================================================================
 
+		//========================================================================================
+		//Puerta izquierda del librero
+		model = glm::mat4(1);
+		model_BisagraLibrero_izq = model = glm::translate(model, glm::vec3(19.10f, 4.0f, -20.83f));//Matriz temporal para el pivote de apertura
+		model = glm::rotate(model_BisagraLibrero_izq, glm::radians(-bisagras_librero_izq), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(1.4f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto03_Izq.Draw(lightingShader);
+
+		//========================================================================================
+		//Puerta derecha del librero
+		model = glm::mat4(1);
+		model_BisagraLibrero_der = model = glm::translate(model, glm::vec3(28.31f, 4.0f, -20.83f));//Matriz temporal para el pivote de apertura
+		model = glm::rotate(model_BisagraLibrero_der, glm::radians(bisagras_librero_der), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-1.4f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto03_Der.Draw(lightingShader);
 
 		//========================================================================================
 		model = glm::mat4(1);
@@ -280,7 +312,7 @@ void DoMovement()
 		camera.ProcessKeyboard(RIGHT, deltaTime);
 	}
 	//===================================================================
-	//Animación para realizar la apertura
+	//Animación para realizar la apertura de la entrada
 	if (puertaCerrada) {
 		if (bisagras_puertas < MAXIMA_APERTURA) { //Si la apertura es menor al máximo
 			bisagras_puertas += incremento_bisagras; //incrementamos las bisagras
@@ -297,6 +329,44 @@ void DoMovement()
 		else {
 			// La animación ha terminado, restablecer la variable
 			animacion_01 = false;
+		}
+	}
+	//===================================================================
+	//Animación para realizar la apertura de la puerta izquierda del librero
+	if (puertaIzqCerrada) {
+		if (bisagras_librero_izq < MAXIMA_APERTURA_LIBRERO_IZQ) { //Si la apertura es menor al máximo
+			bisagras_librero_izq += incremento_bisagras; //incrementamos las bisagras
+		}
+		else {
+			animacion_02_izq = false;
+		}
+
+	}
+	else {
+		if (bisagras_librero_izq >= 0) {
+			bisagras_librero_izq -= incremento_bisagras;
+		}
+		else {
+			animacion_02_izq = false;
+		}
+	}
+
+	//===================================================================
+	//Animación para realizar la apertura de la puerta derecha del librero
+	if (puertaDerCerrada) {
+		if (bisagras_librero_der < MAXIMA_APERTURA_LIBRERO_DER) { //Si la apertura es menor al máximo
+			bisagras_librero_der += incremento_bisagras; //incrementamos las bisagras
+		}
+		else {
+			animacion_02_der = false;
+		}
+	}
+	else {
+		if (bisagras_librero_der >= 0) {
+			bisagras_librero_der -= incremento_bisagras;
+		}
+		else {
+			animacion_02_der = false;
 		}
 	}
 	//===================================================================
@@ -334,6 +404,32 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 				puertaCerrada = true; // La puerta está cerrada nuevamente
 			}
 			animacion_01 = true;
+		}
+	}
+	//==================================================================================================
+	//Tecla Z para activar la animación 2 -> Apertura de Puerta izquierda del librero
+	if (!animacion_02_izq) {
+		if (key == GLFW_KEY_Z && action == GLFW_PRESS) {
+			if (puertaIzqCerrada) {
+				puertaIzqCerrada = false;
+			}
+			else {
+				puertaIzqCerrada = true;
+			}
+			animacion_02_izq = true;
+		}
+	}
+	//==================================================================================================
+	//Tecla X para activar la animación 2 -> Apertura de Puerta derecha del librero
+	if (!animacion_02_der) {
+		if (key == GLFW_KEY_X && action == GLFW_PRESS) {
+			if (puertaDerCerrada) {
+				puertaDerCerrada = false;
+			}
+			else {
+				puertaDerCerrada = true;
+			}
+			animacion_02_der = true;
 		}
 	}
 	//==================================================================================================
