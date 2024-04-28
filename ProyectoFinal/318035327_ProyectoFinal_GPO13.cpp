@@ -34,7 +34,7 @@ const GLuint WIDTH = 1900, HEIGHT = 1200;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
-Camera  camera(glm::vec3(0.0f, 6.0f, 26.0f));
+Camera  camera(glm::vec3(0.0f, 6.0f, 20.0f));
 GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
@@ -53,12 +53,11 @@ bool animacion_02_izq = false;
 bool animacion_02_der = false;
 bool puertaIzqCerrada = false;
 bool puertaDerCerrada = false;
-float bisagra_izq = 0.0f;
-float bisagra_der = 0.0f;
 float bisagras_librero_izq = 0.0f;
 float bisagras_librero_der = 0.0f;
 const float MAXIMA_APERTURA_LIBRERO_IZQ = 105;
 const float MAXIMA_APERTURA_LIBRERO_DER = 82;
+
 //========================================================================
 //Variables para la aimación sencilla 03 -> Libro 01
 bool animacion_02_libro01 = false;
@@ -89,6 +88,22 @@ float rotacion_ejez2 = 0.0f;
 float traslacion_libro03 = 0.0f;
 
 //========================================================================================
+//Variables para la animación sencilla 04 -> Puertas del escritorio
+bool animacion_04 = false;
+bool puerta_escritorio = false;
+float bisagra_escritorio = 0.0f;
+float bisagra_caja = 0.0f;
+const float MAXIMA_APERTURA_ESCRITORIO = 90;
+const float MAXIMA_APERTURA_CAJA = 82;
+//========================================================================
+//Variables para la animación compleja 01 -> Movimiento de la flama
+bool Compleja_01 = false;
+float tiempo = 0.0f;
+//========================================================================
+//Variables para la animación sencilla 05  -> Movimiento de la protogema
+bool animacionSencilla_05 = false;
+float proto = 0.0f;
+
 // Deltatime
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
@@ -133,12 +148,13 @@ int main()
 	glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
 
 
-
+	//Declaración de Shaders a Ocupar
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
+	Shader animacionCompleja_01("Shaders/animacionCompleja_01.vs", "Shaders/animacionCompleja_01.frag");
+	Shader animacionSencilla_03("Shaders/animacionSencilla_03.vs", "Shaders/animacionSencilla_03.frag");
 
 	Model Piso((char*)"Models/Pasto/Piso.obj");
-	glUniform1f(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1.0);
 	Model Fachada((char*)"Models/Modelo_Casa/modelo_Casa.obj");
 	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
 	Model Puerta_Der((char*)"Models/Modelo_Casa/door_Right.obj");
@@ -154,6 +170,11 @@ int main()
 	Model objeto03_Libro03((char*)"Models/Objeto_03/objeto_03_libro03.obj");
 
 	Model objeto04((char*)"Models/Objeto_04/objeto_04.obj");
+	Model objeto04_protogema((char*)"Models/Objeto_04/objeto_04_protogema.obj");
+	Model objeto04_flama((char*)"Models/Objeto_04/objeto_04_flama.obj");
+	Model objeto04_Puerta((char*)"Models/Objeto_04/objeto_04_door.obj");
+	Model objeto04_Puerta_Caja((char*)"Models/Objeto_04/objeto_04_doorCaja.obj");
+
 	Model objeto05((char*)"Models/Objeto_05/objeto_05.obj");
 	Model objeto06((char*)"Models/Objeto_06/objeto_06.obj");
 	Model objeto07((char*)"Models/Objeto_07/objeto_07.obj");
@@ -244,6 +265,9 @@ int main()
 		glm::mat4 model2_Libro02(1);//Matriz Temporal para libro 02
 		glm::mat4 model1_Libro03(1);//Matriz Temporal para libro 03
 		glm::mat4 model2_Libro03(1);//Matriz Temporal para libro 03
+
+		glm::mat4 model_Bisagra_escritorio(1);//Matriz Temporal para bisagras.
+		glm::mat4 model_Bisagra_caja(1);//Matriz Temporal para bisagras.
 		//glm::mat4 model_aux2(1);
 
 		//Carga de modelo 
@@ -259,6 +283,8 @@ int main()
 		model2_Libro02 = glm::mat4(1);
 		model1_Libro03 = glm::mat4(1);
 		model2_Libro03 = glm::mat4(1);
+		model_Bisagra_escritorio = glm::mat4(1);
+		model_Bisagra_caja = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
 		//========================================================================================
@@ -336,6 +362,24 @@ int main()
 		objeto03_Libro03.Draw(lightingShader);
 
 		//========================================================================================
+		//Puerta del Librero
+		model = glm::mat4(1);
+		model_Bisagra_escritorio = model = glm::translate(model, glm::vec3(26.65f, 3.70f, -13.0f));//Matriz temporal para el pivote de apertura
+		model = glm::rotate(model_Bisagra_escritorio, glm::radians(-bisagra_escritorio), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(-1.16f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_Puerta.Draw(lightingShader);
+
+		//========================================================================================
+		//Puerta de la Caja Fuerte
+		model = glm::mat4(1);
+		model_Bisagra_caja = model = glm::translate(model, glm::vec3(24.49f, 3.54f, -11.88f));//Matriz temporal para el pivote de apertura
+		model = glm::rotate(model_Bisagra_caja, glm::radians(bisagra_caja), glm::vec3(0.0f, 1.0f, 0.0f));
+		model = glm::translate(model, glm::vec3(0.89f, 0.0f, 0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_Puerta_Caja.Draw(lightingShader);
+
+		//========================================================================================
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto01.Draw(lightingShader);
@@ -352,8 +396,67 @@ int main()
 		objetoExtra04.Draw(lightingShader);
 		objetoExtra05.Draw(lightingShader);
 		objetoExtra06.Draw(lightingShader);
+		glBindVertexArray(0);
 
-		//glBindVertexArray(0);
+		//========================================================================================
+		animacionSencilla_03.Use();
+		modelLoc = glGetUniformLocation(animacionSencilla_03.Program, "model");
+		viewLoc = glGetUniformLocation(animacionSencilla_03.Program, "view");
+		projLoc = glGetUniformLocation(animacionSencilla_03.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::mat4(1);
+		glUniform1f(glGetUniformLocation(animacionSencilla_03.Program, "time"), proto);
+		model = glm::translate(model, glm::vec3(25.45f, 2.86f, -11.30f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_protogema.Draw(animacionSencilla_03);
+
+		//========================================================================================
+		//Animación Compleja
+
+		animacionCompleja_01.Use();
+		//tiempo = glfwGetTime();//normalizar la velocidad
+		// Get location objects for the matrices on the lamp shader (these could be different on a different shader)
+		modelLoc = glGetUniformLocation(animacionCompleja_01.Program, "model");
+		viewLoc = glGetUniformLocation(animacionCompleja_01.Program, "view");
+		projLoc = glGetUniformLocation(animacionCompleja_01.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animacionCompleja_01.Program, "activaTransparencia"), 0.0);
+		//Vela individual
+		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		glUniform4f(glGetUniformLocation(animacionCompleja_01.Program, "colorAlpha"), 1.0f, 1.0f, 0.7f, 0.60f);
+		model = glm::mat4(1);
+		glUniform1f(glGetUniformLocation(animacionCompleja_01.Program, "time"), tiempo);
+		model = glm::translate(model, glm::vec3(18.96f, 6.05f, -10.89f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+
+		//Candelero
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(23.91f, 7.24f, -10.86f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(24.87f, 7.24f, -10.86f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(24.39f, 7.46f, -10.86f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+		glBindVertexArray(0);
+
+		glDisable(GL_BLEND);  //Desactiva el canal alfa
+		//========================================================================================
 		// Swap the screen buffers
 		glfwSwapBuffers(window);
 	}
@@ -522,7 +625,7 @@ void DoMovement()
 	}
 
 	//===================================================================
-		//Animación para realizar la el movimiento del libro 02 del librero
+	//Animación para realizar la el movimiento del libro 02 del librero
 	if (libro_trasladado3) {
 		if (traslacion_libro03 < TRASLACION_MAXIMA) {
 			traslacion_libro03 += velocidad_traslacion;
@@ -558,6 +661,53 @@ void DoMovement()
 				}
 			}
 		}
+	}
+
+	//===================================================================
+	//Animación para realizar el movimiento del las puerta del librero y caja fuerte
+	if (puerta_escritorio) {
+		if (bisagra_escritorio < MAXIMA_APERTURA_ESCRITORIO) {
+			bisagra_escritorio += velocidad_rotacion;
+		}
+		else {
+			if (bisagra_caja < MAXIMA_APERTURA_CAJA) {
+				bisagra_caja += velocidad_rotacion;
+			}
+			else {
+				animacion_04 = false;
+			}
+		}
+	}
+	else {
+		if (bisagra_caja >= 0) {
+			bisagra_caja -= velocidad_rotacion;
+		}
+		else {
+			if (bisagra_escritorio >= 0) {
+				bisagra_escritorio -= velocidad_rotacion;
+			}
+			else {
+				animacion_04 = false;
+			}
+		}
+	}
+
+	//===================================================================
+	//Animación Compleja 01 -> Movimento de una vela
+	if (Compleja_01) {
+		tiempo = glfwGetTime();
+	}
+	else {
+		tiempo = 0.0f;
+	}
+
+	//===================================================================
+	//Animación Compleja 01 -> Movimento de la protogema
+	if (animacionSencilla_05) {
+		proto = glfwGetTime();
+	}
+	else {
+		proto = 0.0f;
 	}
 
 	//===================================================================
@@ -654,7 +804,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 		}
 	}
 	//==================================================================================================
-	 // Tecla 3 para activar la animación del libro
+	// Tecla 3 para activar la animación del libro
 	if (!animacion_02_libro03)
 	{
 		if (key == GLFW_KEY_3 && action == GLFW_PRESS)
@@ -669,6 +819,31 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 		}
 	}
 	//==================================================================================================
+	// Tecla C para activar la animación del las puertas del escritorio
+	if (!animacion_04)
+	{
+		if (key == GLFW_KEY_C && action == GLFW_PRESS)
+		{
+			if (puerta_escritorio) {
+				puerta_escritorio = false;
+			}
+			else {
+				puerta_escritorio = true;
+			}
+			animacion_04 = true;
+		}
+	}
+	//==================================================================================================
+	//Tecla N para activar la animación Compleja 01
+	if (key == GLFW_KEY_N && action == GLFW_PRESS) {
+		Compleja_01 = !Compleja_01;
+	}
+
+	//==================================================================================================
+	//Tecla B para activar la animación Sencilla 05
+	if (key == GLFW_KEY_B && action == GLFW_PRESS) {
+		animacionSencilla_05 = !animacionSencilla_05;
+	}
 }
 
 
