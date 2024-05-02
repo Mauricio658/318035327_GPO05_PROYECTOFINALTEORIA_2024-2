@@ -159,32 +159,34 @@ int main()
 	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
 	Model Puerta_Der((char*)"Models/Modelo_Casa/door_Right.obj");
 
-	Model objeto01((char*)"Models/Objeto_01/objeto_01.obj");
-	Model objeto02((char*)"Models/Objeto_02/objeto_02.obj");
+	Model objeto01((char*)"Models/Modelo_Objetos/Objeto_01/objeto_01.obj");
+	Model objeto02((char*)"Models/Modelo_Objetos/Objeto_02/objeto_02.obj");
 
-	Model objeto03((char*)"Models/Objeto_03/objeto_03.obj");
-	Model objeto03_Der((char*)"Models/Objeto_03/objeto_03_doorRight.obj");
-	Model objeto03_Izq((char*)"Models/Objeto_03/objeto_03_doorLeft.obj");
-	Model objeto03_Libro01((char*)"Models/Objeto_03/objeto_03_libro01.obj");
-	Model objeto03_Libro02((char*)"Models/Objeto_03/objeto_03_libro02.obj");
-	Model objeto03_Libro03((char*)"Models/Objeto_03/objeto_03_libro03.obj");
+	Model objeto03((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03.obj");
+	Model objeto03_Der((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_doorRight.obj");
+	Model objeto03_Izq((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_doorLeft.obj");
+	Model objeto03_Libro01((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro01.obj");
+	Model objeto03_Libro02((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro02.obj");
+	Model objeto03_Libro03((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro03.obj");
 
-	Model objeto04((char*)"Models/Objeto_04/objeto_04.obj");
-	Model objeto04_protogema((char*)"Models/Objeto_04/objeto_04_protogema.obj");
-	Model objeto04_flama((char*)"Models/Objeto_04/objeto_04_flama.obj");
-	Model objeto04_Puerta((char*)"Models/Objeto_04/objeto_04_door.obj");
-	Model objeto04_Puerta_Caja((char*)"Models/Objeto_04/objeto_04_doorCaja.obj");
+	Model objeto04((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04.obj");
+	Model objeto04_protogema((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_protogema.obj");
+	Model objeto04_flama((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_flama.obj");
+	Model objeto04_Puerta((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_door.obj");
+	Model objeto04_Puerta_Caja((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_doorCaja.obj");
 
-	Model objeto05((char*)"Models/Objeto_05/objeto_05.obj");
-	Model objeto06((char*)"Models/Objeto_06/objeto_06.obj");
-	Model objeto07((char*)"Models/Objeto_07/objeto_07.obj");
+	Model objeto05((char*)"Models/Modelo_Objetos/Objeto_05/objeto_05.obj");
+	Model objeto06((char*)"Models/Modelo_Objetos/Objeto_06/objeto_06.obj");
+	Model objeto07((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07.obj");
+	Model objeto07_flama((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_flama.obj");
 
-	Model objetoExtra01((char*)"Models/objeto_Extra_01/objetoExtra_01.obj");
-	Model objetoExtra02((char*)"Models/objeto_Extra_02/objetoExtra_02.obj");
-	Model objetoExtra03((char*)"Models/objeto_Extra_03/objetoExtra_03.obj");
-	Model objetoExtra04((char*)"Models/objeto_Extra_04/objetoExtra_04.obj");
-	Model objetoExtra05((char*)"Models/objeto_Extra_05/objetoExtra_05.obj");
-	Model objetoExtra06((char*)"Models/objeto_Extra_06/objetoExtra_06.obj");
+	Model objetoExtra01((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01.obj");
+	Model objetoExtra01_flama((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01_flama.obj");
+	Model objetoExtra02((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_02/objetoExtra_02.obj");
+	Model objetoExtra03((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_03/objetoExtra_03.obj");
+	Model objetoExtra04((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_04/objetoExtra_04.obj");
+	Model objetoExtra05((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_05/objetoExtra_05.obj");
+	Model objetoExtra06((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_06/objetoExtra_06.obj");
 
 
 
@@ -437,7 +439,7 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto04_flama.Draw(animacionCompleja_01);
 
-
+		//========================================================================================
 		//Candelero
 		model = glm::mat4(1);
 		model = glm::translate(model, glm::vec3(23.91f, 7.24f, -10.86f));
@@ -453,8 +455,37 @@ int main()
 		model = glm::translate(model, glm::vec3(24.39f, 7.46f, -10.86f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto04_flama.Draw(animacionCompleja_01);
-		glBindVertexArray(0);
 
+		//========================================================================================
+		//Candelero mesa
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(1.75f, 6.25f, -7.93f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(2.10f, 6.4f, -7.93f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(2.44f, 6.25f, -7.93f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+		//flama de la chimenea
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-30.74f, 2.91f, -10.75f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objetoExtra01_flama.Draw(animacionCompleja_01);
+
+		//flama de la estufa
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(24.99f, 2.19f, -1.89f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto07_flama.Draw(animacionCompleja_01);
+
+		glBindVertexArray(0);
 		glDisable(GL_BLEND);  //Desactiva el canal alfa
 		//========================================================================================
 		// Swap the screen buffers
