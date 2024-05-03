@@ -1,7 +1,5 @@
 #version 330 core
 
-#define NUMBER_OF_POINT_LIGHTS 4
-
 struct Material
 {
     sampler2D diffuse;
@@ -55,7 +53,6 @@ out vec4 color;
 
 uniform vec3 viewPos;
 uniform DirLight dirLight;
-uniform PointLight pointLights[NUMBER_OF_POINT_LIGHTS];
 uniform SpotLight spotLight;
 uniform Material material;
 uniform float activaTransparencia;
@@ -77,7 +74,7 @@ void main( )
     
  	
     color = colorAlpha*vec4( result,texture(material.diffuse, TexCoords).rgb );
-	  if(color.a < 0.1 && activaTransparencia > 0.0)//modiico aqui
+	if(color.a < 0.1 && activaTransparencia > 0.0)//modiico aqui
         discard;
 
 }

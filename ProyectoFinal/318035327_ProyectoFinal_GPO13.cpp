@@ -99,6 +99,17 @@ const float MAXIMA_APERTURA_CAJA = 82;
 //Variables para la animación compleja 01 -> Movimiento de la flama
 bool Compleja_01 = false;
 float tiempo = 0.0f;
+
+//========================================================================
+//Variables para la animación compleja 02 -> Movimiento de la chimenea
+bool Compleja_02 = false;
+float tiempo2 = 0.0f;
+
+//========================================================================
+//Variables para la animación compleja 02 -> Movimiento de la chimenea
+bool Compleja_03 = false;
+float tiempo3 = 0.0f;
+
 //========================================================================
 //Variables para la animación sencilla 05  -> Movimiento de la protogema
 bool animacionSencilla_05 = false;
@@ -152,6 +163,8 @@ int main()
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
 	Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
 	Shader animacionCompleja_01("Shaders/animacionCompleja_01.vs", "Shaders/animacionCompleja_01.frag");
+	Shader animacionCompleja_02("Shaders/animacionCompleja_02.vs", "Shaders/animacionCompleja_02.frag");
+	Shader animacionCompleja_03("Shaders/animacionCompleja_03.vs", "Shaders/animacionCompleja_03.frag");
 	Shader animacionSencilla_03("Shaders/animacionSencilla_03.vs", "Shaders/animacionSencilla_03.frag");
 
 	Model Piso((char*)"Models/Pasto/Piso.obj");
@@ -472,20 +485,52 @@ int main()
 		model = glm::translate(model, glm::vec3(2.44f, 6.25f, -7.93f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto04_flama.Draw(animacionCompleja_01);
+		glBindVertexArray(0);
 
-		//flama de la chimenea
-		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-30.74f, 2.91f, -10.75f));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		objetoExtra01_flama.Draw(animacionCompleja_01);
-
+		//========================================================================================
 		//flama de la estufa
+		animacionCompleja_03.Use();
+		modelLoc = glGetUniformLocation(animacionCompleja_03.Program, "model");
+		viewLoc = glGetUniformLocation(animacionCompleja_03.Program, "view");
+		projLoc = glGetUniformLocation(animacionCompleja_03.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animacionCompleja_03.Program, "activaTransparencia"), 0.0);
+		glUniform4f(glGetUniformLocation(animacionCompleja_03.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.60f);
 		model = glm::mat4(1);
+		glUniform1f(glGetUniformLocation(animacionCompleja_03.Program, "time"), tiempo3);
 		model = glm::translate(model, glm::vec3(24.99f, 2.19f, -1.89f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		objeto07_flama.Draw(animacionCompleja_01);
-
+		objeto07_flama.Draw(animacionCompleja_03);
 		glBindVertexArray(0);
+
+
+
+		//========================================================================================
+		//flama de la chimenea
+		animacionCompleja_02.Use();
+		modelLoc = glGetUniformLocation(animacionCompleja_02.Program, "model");
+		viewLoc = glGetUniformLocation(animacionCompleja_02.Program, "view");
+		projLoc = glGetUniformLocation(animacionCompleja_02.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animacionCompleja_02.Program, "activaTransparencia"), 0.0);
+		glUniform4f(glGetUniformLocation(animacionCompleja_02.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.60f);
+		model = glm::mat4(1);
+		glUniform1f(glGetUniformLocation(animacionCompleja_02.Program, "time"), tiempo2);
+
+		model = glm::translate(model, glm::vec3(-30.74f, 2.91f, -10.75f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objetoExtra01_flama.Draw(animacionCompleja_02);
+		glBindVertexArray(0);
+
+
+
+
 		glDisable(GL_BLEND);  //Desactiva el canal alfa
 		//========================================================================================
 		// Swap the screen buffers
@@ -731,9 +776,25 @@ void DoMovement()
 	else {
 		tiempo = 0.0f;
 	}
+	//===================================================================
+	//Animación Compleja 02 -> Flama de la Chimenea
+	if (Compleja_02) {
+		tiempo2 = glfwGetTime();
+	}
+	else {
+		tiempo2 = 0.0f;
+	}
+	//===================================================================
+	//Animación Compleja 03 -> Flama de la Estufa
+	if (Compleja_03) {
+		tiempo3 = glfwGetTime();
+	}
+	else {
+		tiempo3 = 0.0f;
+	}
 
 	//===================================================================
-	//Animación Compleja 01 -> Movimento de la protogema
+	//Animación Sencilla 3 -> Movimento de la protogema
 	if (animacionSencilla_05) {
 		proto = glfwGetTime();
 	}
@@ -868,6 +929,17 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 	//Tecla N para activar la animación Compleja 01
 	if (key == GLFW_KEY_N && action == GLFW_PRESS) {
 		Compleja_01 = !Compleja_01;
+	}
+
+	//==================================================================================================
+	//Tecla V para activar la animación Compleja 01
+	if (key == GLFW_KEY_V && action == GLFW_PRESS) {
+		Compleja_02 = !Compleja_02;
+	}
+	//==================================================================================================
+	//Tecla M para activar la animación Compleja 01
+	if (key == GLFW_KEY_M && action == GLFW_PRESS) {
+		Compleja_03 = !Compleja_03;
 	}
 
 	//==================================================================================================
