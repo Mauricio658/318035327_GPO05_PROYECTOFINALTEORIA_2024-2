@@ -2706,15 +2706,6 @@ map_Kd chimenea_exterior.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl objeto_Extra_10:phong5SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd textura_flama.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
 newmtl objeto_extra_04:phong1SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -2731,19 +2722,12 @@ Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl objeto_extra_05:pasted__FBXASC051DGeomFBXASC1261FBXASC032FBXASC040CFBXASC0453DGeomFBXASC1261_DefintionFBXASC03510FBXASC041SG
-illum 4
-Kd 0.45 0.99 0.13
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.11 0.25 0.03
-Ns 23.00
 newmtl objeto_extra_05:pasted__FBXASC051DGeomFBXASC1269FBXASC032FBXASC040CFBXASC0453DGeomFBXASC1269_DefintionFBXASC0354FBXASC041SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
+map_Kd textura_cajaFuerte.png
 Ni 1.00
 Ks 0.00 0.00 0.00
 Ns 23.00
@@ -3185,6 +3169,85 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_pollo.png
 Ns 18.00
+newmtl pasted__phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marco_exterior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_exterior.png
+Ns 18.00
+newmtl pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_flama.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl pasted__phong2SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd marco_interior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_interior.png
+Ns 18.00
+newmtl pasted__phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pilares_marco.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl pasted__phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd fondo_marco.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
+Ns 18.00
+newmtl pasted__phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_estrellas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl pasted__phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_estrellas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl pasted__phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pilares_marco.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso.png
+Ns 18.00
 newmtl pasted__phong9SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -3235,12 +3298,31 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_piso_interior.png
 Ns 18.00
-newmtl pasted__phong24SG
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_manzanas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_partearriba.png
+Ns 18.00
+newmtl phong2SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd textura_flama.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_humo.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00

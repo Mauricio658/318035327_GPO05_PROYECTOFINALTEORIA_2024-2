@@ -106,10 +106,11 @@ bool Compleja_02 = false;
 float tiempo2 = 0.0f;
 
 //========================================================================
-//Variables para la animación compleja 02 -> Movimiento de la chimenea
+//Variables para la animación compleja 03 -> Movimiento de la estufa
 bool Compleja_03 = false;
 float tiempo3 = 0.0f;
-
+float transparenciaHumo = 0.0f;
+const float MAXIMA_TRANSPARENCIA = 0.05f;
 //========================================================================
 //Variables para la animación sencilla 05  -> Movimiento de la protogema
 bool animacionSencilla_05 = false;
@@ -165,8 +166,11 @@ int main()
 	Shader animacionCompleja_01("Shaders/animacionCompleja_01.vs", "Shaders/animacionCompleja_01.frag");
 	Shader animacionCompleja_02("Shaders/animacionCompleja_02.vs", "Shaders/animacionCompleja_02.frag");
 	Shader animacionCompleja_03("Shaders/animacionCompleja_03.vs", "Shaders/animacionCompleja_03.frag");
+	Shader animacionCompleja_04("Shaders/animacionCompleja_04.vs", "Shaders/animacionCompleja_04.frag");
+	Shader animacionCompleja_05("Shaders/animacionCompleja_05.vs", "Shaders/animacionCompleja_05.frag");
 	Shader animacionSencilla_03("Shaders/animacionSencilla_03.vs", "Shaders/animacionSencilla_03.frag");
 
+	//Declaracion de Modelos a usar
 	Model Piso((char*)"Models/Pasto/Piso.obj");
 	Model Fachada((char*)"Models/Modelo_Casa/modelo_Casa.obj");
 	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
@@ -190,8 +194,11 @@ int main()
 
 	Model objeto05((char*)"Models/Modelo_Objetos/Objeto_05/objeto_05.obj");
 	Model objeto06((char*)"Models/Modelo_Objetos/Objeto_06/objeto_06.obj");
+
 	Model objeto07((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07.obj");
 	Model objeto07_flama((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_flama.obj");
+	Model objeto07_aceite((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_aceite.obj");
+	Model objeto07_humo((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_humo.obj");
 
 	Model objetoExtra01((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01.obj");
 	Model objetoExtra01_flama((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01_flama.obj");
@@ -529,8 +536,49 @@ int main()
 		glBindVertexArray(0);
 
 
+		//========================================================================================
+		//Aceite de la estufa
+		animacionCompleja_04.Use();
+		modelLoc = glGetUniformLocation(animacionCompleja_04.Program, "model");
+		viewLoc = glGetUniformLocation(animacionCompleja_04.Program, "view");
+		projLoc = glGetUniformLocation(animacionCompleja_04.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animacionCompleja_04.Program, "activaTransparencia"), 0.0);
+		glUniform4f(glGetUniformLocation(animacionCompleja_04.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.10f);
+		model = glm::mat4(1);
+		glUniform1f(glGetUniformLocation(animacionCompleja_04.Program, "time"), tiempo3);
+
+		model = glm::translate(model, glm::vec3(25.15f, 3.58f, -1.88f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto07_aceite.Draw(animacionCompleja_04);
+		glBindVertexArray(0);
+
+		//========================================================================================
+		//Humo de la estufa
+		animacionCompleja_05.Use();
+		modelLoc = glGetUniformLocation(animacionCompleja_05.Program, "model");
+		viewLoc = glGetUniformLocation(animacionCompleja_05.Program, "view");
+		projLoc = glGetUniformLocation(animacionCompleja_05.Program, "projection");
+		// Set matrices
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1f(glGetUniformLocation(animacionCompleja_05.Program, "activaTransparencia"), 0.0);
+		glUniform4f(glGetUniformLocation(animacionCompleja_05.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, transparenciaHumo);
+		model = glm::mat4(1);
+		glUniform1f(glGetUniformLocation(animacionCompleja_05.Program, "time"), tiempo3);
+
+		model = glm::translate(model, glm::vec3(25.19f, 4.72f, -2.01f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//if (Compleja_03) {
+		objeto07_humo.Draw(animacionCompleja_05);
+		//}
 
 
+		glBindVertexArray(0);
 		glDisable(GL_BLEND);  //Desactiva el canal alfa
 		//========================================================================================
 		// Swap the screen buffers
@@ -785,11 +833,17 @@ void DoMovement()
 		tiempo2 = 0.0f;
 	}
 	//===================================================================
-	//Animación Compleja 03 -> Flama de la Estufa
+	//Animación Compleja 03 -> Flama de la Estufa, aceite y humo
 	if (Compleja_03) {
 		tiempo3 = glfwGetTime();
+		if (transparenciaHumo <= MAXIMA_TRANSPARENCIA) {
+			transparenciaHumo += 0.001f;
+		}
 	}
 	else {
+		if (transparenciaHumo >= 0.0f) {
+			transparenciaHumo -= 0.001f;
+		}
 		tiempo3 = 0.0f;
 	}
 
