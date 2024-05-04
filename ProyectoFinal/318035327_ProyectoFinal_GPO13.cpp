@@ -39,6 +39,15 @@ GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
 bool firstMouse = true;
+
+// Positions of the point lights
+glm::vec3 pointLightPositions[] = {
+	glm::vec3(-30.74f,2.91f, -10.75f),
+	glm::vec3(24.99f,2.19f, -1.89f)
+};
+
+glm::vec3 Light1 = glm::vec3(0);
+glm::vec3 Light2 = glm::vec3(0);
 //========================================================================
 //Variables para la animación sencilla 01 -> Puertas de la Entrada
 bool animacion_01 = false;
@@ -119,6 +128,51 @@ float proto = 0.0f;
 // Deltatime
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
+
+float vertices[] = {
+	 -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+	   -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+	   -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
+
+	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+	   -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
+
+	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+	   -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
+	   -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
+
+		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+		0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
+		0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
+
+	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+		0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+	   -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
+	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
+
+	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
+		0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
+		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+	   -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
+	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
+};
+
 
 int main()
 {
@@ -257,6 +311,36 @@ int main()
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.diffuse"), 0.8f, 0.6f, 0.4f); // Difuso más cálido
 		glUniform3f(glGetUniformLocation(lightingShader.Program, "dirLight.specular"), 0.5f, 0.5f, 0.5f); // Especular más suave
 
+		// Point light 1 Chimenea
+		glm::vec3 lightColor1;
+		lightColor1.x = Light1.x;
+		lightColor1.y = Light1.y;
+		lightColor1.z = Light1.z;
+
+
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].position"), pointLightPositions[0].x, pointLightPositions[0].y, pointLightPositions[0].z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].ambient"), lightColor1.x, lightColor1.y, lightColor1.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].diffuse"), lightColor1.x, lightColor1.y, lightColor1.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[0].specular"), 1.0f, 1.0f, 1.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].constant"), 1.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].linear"), 0.7f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[0].quadratic"), 1.8f);
+
+
+
+		// Point light 2 Estufa
+		glm::vec3 lightColor2;
+		lightColor2.x = Light2.x;
+		lightColor2.y = Light2.y;
+		lightColor2.z = Light2.z;
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].position"), pointLightPositions[1].x, pointLightPositions[1].y, pointLightPositions[1].z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].ambient"), lightColor2.x, lightColor2.y, lightColor2.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].diffuse"), lightColor2.x, lightColor2.y, lightColor2.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[1].specular"), 1.0f, 1.0f, 1.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].constant"), 1.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].linear"), 3.5f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].quadratic"), 1.8f);
+
 		// Set material properties
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 16.0f); // Brillantez más suave
 
@@ -309,6 +393,19 @@ int main()
 		model_Bisagra_caja = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 
+		// Draw the light object (using light's vertex attributes)
+		for (GLuint i = 0; i < 2; i++)
+		{
+			model = glm::mat4(1);
+			model = glm::translate(model, pointLightPositions[i]);
+			model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
+			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+			glBindVertexArray(VAO);
+			glDrawArrays(GL_TRIANGLES, 0, 36);
+		}
+
+		model = glm::mat4(1);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//========================================================================================
 		//Pasto de la pratica 80
 		Piso.Draw(lightingShader);
@@ -828,9 +925,11 @@ void DoMovement()
 	//Animación Compleja 02 -> Flama de la Chimenea
 	if (Compleja_02) {
 		tiempo2 = glfwGetTime();
+		Light1 = glm::vec3(1.0f, 0.2715f, 0.0f);
 	}
 	else {
 		tiempo2 = 0.0f;
+		Light1 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
 	}
 	//===================================================================
 	//Animación Compleja 03 -> Flama de la Estufa, aceite y humo
@@ -839,12 +938,14 @@ void DoMovement()
 		if (transparenciaHumo <= MAXIMA_TRANSPARENCIA) {
 			transparenciaHumo += 0.001f;
 		}
+		Light2 = glm::vec3(1.0f, 0.2715f, 0.0f);
 	}
 	else {
 		if (transparenciaHumo >= 0.0f) {
 			transparenciaHumo -= 0.001f;
 		}
 		tiempo3 = 0.0f;
+		Light2 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
 	}
 
 	//===================================================================
@@ -986,12 +1087,12 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 	}
 
 	//==================================================================================================
-	//Tecla V para activar la animación Compleja 01
+	//Tecla V para activar la animación Compleja 02
 	if (key == GLFW_KEY_V && action == GLFW_PRESS) {
 		Compleja_02 = !Compleja_02;
 	}
 	//==================================================================================================
-	//Tecla M para activar la animación Compleja 01
+	//Tecla M para activar la animación Compleja 03
 	if (key == GLFW_KEY_M && action == GLFW_PRESS) {
 		Compleja_03 = !Compleja_03;
 	}
