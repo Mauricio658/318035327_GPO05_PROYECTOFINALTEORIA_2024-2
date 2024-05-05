@@ -23,10 +23,12 @@
 #include "Shader.h"
 #include "Camera.h"
 #include "Model.h"
+#include "Texture.h"
+
 
 // Function prototypes
-void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode);
-void MouseCallback(GLFWwindow* window, double xPos, double yPos);
+void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode);
+void MouseCallback(GLFWwindow *window, double xPos, double yPos);
 void DoMovement();
 
 // Window dimensions
@@ -43,7 +45,7 @@ bool firstMouse = true;
 // Positions of the point lights
 glm::vec3 pointLightPositions[] = {
 	glm::vec3(-30.74f,2.91f, -10.75f),
-	glm::vec3(24.99f,2.19f, -1.89f)
+	glm::vec3( 24.99f,2.19f, -1.89f)
 };
 
 glm::vec3 Light1 = glm::vec3(0);
@@ -129,49 +131,6 @@ float proto = 0.0f;
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
 
-float vertices[] = {
-	 -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	   -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-	   -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,
-
-	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-	   -0.5f,  0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-	   -0.5f, -0.5f,  0.5f,  0.0f,  0.0f,  1.0f,
-
-	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f,  0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f, -0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-	   -0.5f,  0.5f,  0.5f, -1.0f,  0.0f,  0.0f,
-
-		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f,  0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  1.0f,  0.0f,  0.0f,
-
-	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-		0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	   -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,
-	   -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,
-
-	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-		0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	   -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,
-	   -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f
-};
 
 
 int main()
@@ -223,9 +182,10 @@ int main()
 	Shader animacionCompleja_04("Shaders/animacionCompleja_04.vs", "Shaders/animacionCompleja_04.frag");
 	Shader animacionCompleja_05("Shaders/animacionCompleja_05.vs", "Shaders/animacionCompleja_05.frag");
 	Shader animacionSencilla_03("Shaders/animacionSencilla_03.vs", "Shaders/animacionSencilla_03.frag");
+	Shader SkyBoxshader("Shaders/SkyBox.vs", "Shaders/SkyBox.frag");
 
 	//Declaracion de Modelos a usar
-	Model Piso((char*)"Models/Pasto/Piso.obj");
+	Model Piso((char*)"Models/Modelo_Piso/islaFlotante.obj");
 	Model Fachada((char*)"Models/Modelo_Casa/modelo_Casa.obj");
 	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
 	Model Puerta_Der((char*)"Models/Modelo_Casa/door_Right.obj");
@@ -239,7 +199,7 @@ int main()
 	Model objeto03_Libro01((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro01.obj");
 	Model objeto03_Libro02((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro02.obj");
 	Model objeto03_Libro03((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro03.obj");
-
+	
 	Model objeto04((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04.obj");
 	Model objeto04_protogema((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_protogema.obj");
 	Model objeto04_flama((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_flama.obj");
@@ -253,7 +213,7 @@ int main()
 	Model objeto07_flama((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_flama.obj");
 	Model objeto07_aceite((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_aceite.obj");
 	Model objeto07_humo((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_humo.obj");
-
+	
 	Model objetoExtra01((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01.obj");
 	Model objetoExtra01_flama((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01_flama.obj");
 	Model objetoExtra02((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_02/objetoExtra_02.obj");
@@ -262,20 +222,75 @@ int main()
 	Model objetoExtra05((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_05/objetoExtra_05.obj");
 	Model objetoExtra06((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_06/objetoExtra_06.obj");
 
+	GLfloat skyboxVertices[] = {
+		// Positions
+		-1.0f,  1.0f, -1.0f,
+		-1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
 
+		-1.0f, -1.0f,  1.0f,
+		-1.0f, -1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f, -1.0f,
+		-1.0f,  1.0f,  1.0f,
+		-1.0f, -1.0f,  1.0f,
 
-	// First, set the container's VAO (and VBO)
-	GLuint VBO, VAO;
-	glGenVertexArrays(1, &VAO);
-	glGenBuffers(1, &VBO);
-	glBindVertexArray(VAO);
-	glBindBuffer(GL_ARRAY_BUFFER, VBO);
-	// Set texture units
-	lightingShader.Use();
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+
+		-1.0f, -1.0f,  1.0f,
+		-1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f, -1.0f,  1.0f,
+		-1.0f, -1.0f,  1.0f,
+
+		-1.0f,  1.0f, -1.0f,
+		1.0f,  1.0f, -1.0f,
+		1.0f,  1.0f,  1.0f,
+		1.0f,  1.0f,  1.0f,
+		-1.0f,  1.0f,  1.0f,
+		-1.0f,  1.0f, -1.0f,
+
+		-1.0f, -1.0f, -1.0f,
+		-1.0f, -1.0f,  1.0f,
+		1.0f, -1.0f, -1.0f,
+		1.0f, -1.0f, -1.0f,
+		-1.0f, -1.0f,  1.0f,
+		1.0f, -1.0f,  1.0f
+	};
+
+	//SkyBox
+	GLuint skyboxVBO, skyboxVAO;
+	glGenVertexArrays(1, &skyboxVAO);
+	glGenBuffers(1, &skyboxVBO);
+	glBindVertexArray(skyboxVAO);
+	glBindBuffer(GL_ARRAY_BUFFER, skyboxVBO);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(skyboxVertices), &skyboxVertices, GL_STATIC_DRAW);
+	glEnableVertexAttribArray(0);
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(GLfloat), (GLvoid*)0);
+
+	// Load textures del skybox
+	vector<const GLchar*> faces;
+	faces.push_back("Skybox/right.tga");
+	faces.push_back("Skybox/left.tga");
+	faces.push_back("Skybox/top.tga");
+	faces.push_back("Skybox/bottom.tga");
+	faces.push_back("Skybox/back.tga");
+	faces.push_back("Skybox/front.tga");
+
+	GLuint cubemapTexture = TextureLoading::LoadCubemap(faces);
 
 
 	glm::mat4 projection = glm::perspective(camera.GetZoom(), (GLfloat)SCREEN_WIDTH / (GLfloat)SCREEN_HEIGHT, 0.1f, 100.0f);
-
+	lightingShader.Use();
 	// Game loop
 	while (!glfwWindowShouldClose(window))
 	{
@@ -292,14 +307,14 @@ int main()
 		// Clear the colorbuffer
 		glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
+	   
 		// OpenGL options
 		glEnable(GL_DEPTH_TEST);
 		//Load Model
 		// Use cooresponding shader when setting uniforms/drawing objects
 		lightingShader.Use();
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 0);
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"), 1);
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "material.specular"),1);
 
 		GLint viewPosLoc = glGetUniformLocation(lightingShader.Program, "viewPos");
 		glUniform3f(viewPosLoc, camera.GetPosition().x, camera.GetPosition().y, camera.GetPosition().z);
@@ -374,17 +389,16 @@ int main()
 
 		glm::mat4 model_Bisagra_escritorio(1);//Matriz Temporal para bisagras.
 		glm::mat4 model_Bisagra_caja(1);//Matriz Temporal para bisagras.
-		//glm::mat4 model_aux2(1);
 
 		//Carga de modelo 
-		view = camera.GetViewMatrix();
+        view = camera.GetViewMatrix();	
 		model = glm::mat4(1);
 		model_Bisagra_izq = glm::mat4(1);
 		model_Bisagra_der = glm::mat4(1);
 		model_BisagraLibrero_der = glm::mat4(1);
 		model_BisagraLibrero_izq = glm::mat4(1);
 		model1_Libro01 = glm::mat4(1);
-		model2_Libro01 = glm::mat4(1);
+		model2_Libro01 = glm::mat4(1);		
 		model1_Libro02 = glm::mat4(1);
 		model2_Libro02 = glm::mat4(1);
 		model1_Libro03 = glm::mat4(1);
@@ -392,24 +406,10 @@ int main()
 		model_Bisagra_escritorio = glm::mat4(1);
 		model_Bisagra_caja = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-
-		// Draw the light object (using light's vertex attributes)
-		for (GLuint i = 0; i < 2; i++)
-		{
-			model = glm::mat4(1);
-			model = glm::translate(model, pointLightPositions[i]);
-			model = glm::scale(model, glm::vec3(0.2f)); // Make it a smaller cube
-			glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-			glBindVertexArray(VAO);
-			glDrawArrays(GL_TRIANGLES, 0, 36);
-		}
-
-		model = glm::mat4(1);
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//========================================================================================
 		//Pasto de la pratica 80
 		Piso.Draw(lightingShader);
-
+	
 		//========================================================================================
 		//Casa
 		Fachada.Draw(lightingShader);
@@ -435,7 +435,7 @@ int main()
 		//========================================================================================
 		//Puerta izquierda del librero
 		model = glm::mat4(1);
-		model_BisagraLibrero_izq = model = glm::translate(model, glm::vec3(19.10f, 4.0f, -20.83f));//Matriz temporal para el pivote de apertura
+		model_BisagraLibrero_izq = model = glm::translate(model, glm::vec3(19.10f, 4.0f,-20.83f));//Matriz temporal para el pivote de apertura
 		model = glm::rotate(model_BisagraLibrero_izq, glm::radians(-bisagras_librero_izq), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::translate(model, glm::vec3(1.4f, 0.0f, 0.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
@@ -473,7 +473,7 @@ int main()
 		//========================================================================================
 		//Libro 03 del librero
 		model = glm::mat4(1);
-		model1_Libro03 = model = glm::translate(model, glm::vec3(24.56f, 6.03f, -21.60f)); //Posición en el librero
+		model1_Libro03 = model = glm::translate(model, glm::vec3(24.56f,6.03f, -21.60f)); //Posición en el librero
 		model2_Libro03 = model = glm::translate(model1_Libro03, glm::vec3(0.0f, 0.0f, traslacion_libro03)); //Posición en el librero
 		model2_Libro03 = model = glm::rotate(model2_Libro03, glm::radians(-rotacion_ejey2), glm::vec3(0.0f, 1.0f, 0.0f));
 		model = glm::rotate(model2_Libro03, glm::radians(rotacion_ejez2), glm::vec3(0.0f, 0.0f, 1.0f));
@@ -508,7 +508,7 @@ int main()
 		objeto05.Draw(lightingShader);
 		objeto06.Draw(lightingShader);
 		objeto07.Draw(lightingShader);
-
+		
 		objetoExtra01.Draw(lightingShader);
 		objetoExtra02.Draw(lightingShader);
 		objetoExtra03.Draw(lightingShader);
@@ -534,7 +534,7 @@ int main()
 
 		//========================================================================================
 		//Animación Compleja
-
+		
 		animacionCompleja_01.Use();
 		//tiempo = glfwGetTime();//normalizar la velocidad
 		// Get location objects for the matrices on the lamp shader (these could be different on a different shader)
@@ -564,7 +564,7 @@ int main()
 		objeto04_flama.Draw(animacionCompleja_01);
 
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(24.87f, 7.24f, -10.86f));
+		model = glm::translate(model, glm::vec3(24.87f, 7.24f,-10.86f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto04_flama.Draw(animacionCompleja_01);
 
@@ -598,9 +598,9 @@ int main()
 		viewLoc = glGetUniformLocation(animacionCompleja_03.Program, "view");
 		projLoc = glGetUniformLocation(animacionCompleja_03.Program, "projection");
 		// Set matrices
-		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view)); 
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection)); 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
 		glUniform1f(glGetUniformLocation(animacionCompleja_03.Program, "activaTransparencia"), 0.0);
 		glUniform4f(glGetUniformLocation(animacionCompleja_03.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.60f);
 		model = glm::mat4(1);
@@ -626,7 +626,7 @@ int main()
 		glUniform4f(glGetUniformLocation(animacionCompleja_02.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.60f);
 		model = glm::mat4(1);
 		glUniform1f(glGetUniformLocation(animacionCompleja_02.Program, "time"), tiempo2);
-
+		
 		model = glm::translate(model, glm::vec3(-30.74f, 2.91f, -10.75f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objetoExtra01_flama.Draw(animacionCompleja_02);
@@ -640,9 +640,9 @@ int main()
 		viewLoc = glGetUniformLocation(animacionCompleja_04.Program, "view");
 		projLoc = glGetUniformLocation(animacionCompleja_04.Program, "projection");
 		// Set matrices
-		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view)); 
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection)); 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
 		glUniform1f(glGetUniformLocation(animacionCompleja_04.Program, "activaTransparencia"), 0.0);
 		glUniform4f(glGetUniformLocation(animacionCompleja_04.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.10f);
 		model = glm::mat4(1);
@@ -656,32 +656,48 @@ int main()
 		//========================================================================================
 		//Humo de la estufa
 		animacionCompleja_05.Use();
-		modelLoc = glGetUniformLocation(animacionCompleja_05.Program, "model");
-		viewLoc = glGetUniformLocation(animacionCompleja_05.Program, "view");
-		projLoc = glGetUniformLocation(animacionCompleja_05.Program, "projection");
+		modelLoc = glGetUniformLocation(animacionCompleja_05.Program, "model"); 
+		viewLoc = glGetUniformLocation(animacionCompleja_05.Program, "view"); 
+		projLoc = glGetUniformLocation(animacionCompleja_05.Program, "projection"); 
 		// Set matrices
-		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
-		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1f(glGetUniformLocation(animacionCompleja_05.Program, "activaTransparencia"), 0.0);
+		glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view)); 
+		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection)); 
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
+		glUniform1f(glGetUniformLocation(animacionCompleja_05.Program, "activaTransparencia"), 0.0); 
 		glUniform4f(glGetUniformLocation(animacionCompleja_05.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, transparenciaHumo);
 		model = glm::mat4(1);
 		glUniform1f(glGetUniformLocation(animacionCompleja_05.Program, "time"), tiempo3);
 
 		model = glm::translate(model, glm::vec3(25.19f, 4.72f, -2.01f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//if (Compleja_03) {
 		objeto07_humo.Draw(animacionCompleja_05);
-		//}
-
-
+		
 		glBindVertexArray(0);
 		glDisable(GL_BLEND);  //Desactiva el canal alfa
 		//========================================================================================
+		// Draw skybox as last
+		glDepthFunc(GL_LEQUAL);  // Change depth function so depth test passes when values are equal to depth buffer's content
+		SkyBoxshader.Use();
+		view = glm::mat4(glm::mat3(camera.GetViewMatrix()));	// Remove any translation component of the view matrix
+		glUniformMatrix4fv(glGetUniformLocation(SkyBoxshader.Program, "view"), 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(glGetUniformLocation(SkyBoxshader.Program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
+
+		// skybox cube
+		glBindVertexArray(skyboxVAO);
+		glActiveTexture(GL_TEXTURE1);
+		glBindTexture(GL_TEXTURE_CUBE_MAP, cubemapTexture);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+		glBindVertexArray(0);
+		glDepthFunc(GL_LESS); // Set depth function back to default
+
+
+
 		// Swap the screen buffers
 		glfwSwapBuffers(window);
 	}
 	// Terminate GLFW, clearing any resources allocated by GLFW.
+	glDeleteVertexArrays(1, &skyboxVAO);
+	glDeleteBuffers(1, &skyboxVBO);
 	glfwTerminate();
 	return 0;
 }
@@ -715,17 +731,14 @@ void DoMovement()
 	if (puertaCerrada) {
 		if (bisagras_puertas < MAXIMA_APERTURA) { //Si la apertura es menor al máximo
 			bisagras_puertas += incremento_bisagras; //incrementamos las bisagras
-		}
-		else {
+		} else {
 			// La animación ha terminado, restablecer la variable
 			animacion_01 = false;
 		}
-	}
-	else {
+	} else {
 		if (bisagras_puertas >= 0) {
 			bisagras_puertas -= incremento_bisagras;
-		}
-		else {
+		} else {
 			// La animación ha terminado, restablecer la variable
 			animacion_01 = false;
 		}
@@ -735,17 +748,14 @@ void DoMovement()
 	if (puertaIzqCerrada) {
 		if (bisagras_librero_izq < MAXIMA_APERTURA_LIBRERO_IZQ) { //Si la apertura es menor al máximo
 			bisagras_librero_izq += incremento_bisagras; //incrementamos las bisagras
-		}
-		else {
+		} else {
 			animacion_02_izq = false;
 		}
-
-	}
-	else {
+		
+	} else {
 		if (bisagras_librero_izq >= 0) {
 			bisagras_librero_izq -= incremento_bisagras;
-		}
-		else {
+		} else {
 			animacion_02_izq = false;
 		}
 	}
@@ -755,16 +765,13 @@ void DoMovement()
 	if (puertaDerCerrada) {
 		if (bisagras_librero_der < MAXIMA_APERTURA_LIBRERO_DER) { //Si la apertura es menor al máximo
 			bisagras_librero_der += incremento_bisagras; //incrementamos las bisagras
-		}
-		else {
+		} else {
 			animacion_02_der = false;
 		}
-	}
-	else {
+	} else {
 		if (bisagras_librero_der >= 0) {
 			bisagras_librero_der -= incremento_bisagras;
-		}
-		else {
+		} else {
 			animacion_02_der = false;
 		}
 	}
@@ -772,35 +779,28 @@ void DoMovement()
 	//Animación para realizar la el movimiento del libro 01 del librero
 	if (libro_trasladado1) {
 		if (traslacion_libro01 < TRASLACION_MAXIMA) {
-			traslacion_libro01 += velocidad_traslacion;
-		}
-		else {
+			traslacion_libro01 += velocidad_traslacion;	
+		} else {
 			if (rotacion_ejey < ROTACION_MAXIMA_Y) {
 				rotacion_ejey += velocidad_rotacion;
-			}
-			else {
+			} else {
 				if (rotacion_ejez < INCLINACION_MAXIMA) {
 					rotacion_ejez += velocidad_rotacion;
-				}
-				else {
-					animacion_02_libro01 = false;
+				} else {
+				animacion_02_libro01 = false;
 				}
 			}
 		}
-	}
-	else {
+	} else {
 		if (rotacion_ejez >= 0) {
 			rotacion_ejez -= velocidad_rotacion;
-		}
-		else {
+		} else {
 			if (rotacion_ejey >= 0) {
 				rotacion_ejey -= velocidad_rotacion;
-			}
-			else {
+			} else {
 				if (traslacion_libro01 >= 0) {
 					traslacion_libro01 -= velocidad_traslacion;
-				}
-				else {
+				} else {
 					animacion_02_libro01 = false;
 				}
 			}
@@ -811,34 +811,27 @@ void DoMovement()
 	if (libro_trasladado2) {
 		if (traslacion_libro02 < TRASLACION_MAXIMA) {
 			traslacion_libro02 += velocidad_traslacion;
-		}
-		else {
+		} else {
 			if (rotacion_ejey1 < ROTACION_MAXIMA_Y) {
 				rotacion_ejey1 += velocidad_rotacion;
-			}
-			else {
+			} else {
 				if (rotacion_ejez1 < INCLINACION_MAXIMA) {
 					rotacion_ejez1 += velocidad_rotacion;
-				}
-				else {
+				} else {
 					animacion_02_libro02 = false;
 				}
 			}
 		}
-	}
-	else {
+	} else {
 		if (rotacion_ejez1 >= 0) {
 			rotacion_ejez1 -= velocidad_rotacion;
-		}
-		else {
+		} else {
 			if (rotacion_ejey1 >= 0) {
 				rotacion_ejey1 -= velocidad_rotacion;
-			}
-			else {
+			} else {
 				if (traslacion_libro02 >= 0) {
 					traslacion_libro02 -= velocidad_traslacion;
-				}
-				else {
+				} else {
 					animacion_02_libro02 = false;
 				}
 			}
@@ -850,34 +843,27 @@ void DoMovement()
 	if (libro_trasladado3) {
 		if (traslacion_libro03 < TRASLACION_MAXIMA) {
 			traslacion_libro03 += velocidad_traslacion;
-		}
-		else {
+		} else {
 			if (rotacion_ejey2 < ROTACION_MAXIMA_Y) {
 				rotacion_ejey2 += velocidad_rotacion;
-			}
-			else {
+			} else {
 				if (rotacion_ejez2 < INCLINACION_MAXIMA) {
 					rotacion_ejez2 += velocidad_rotacion;
-				}
-				else {
+				} else {
 					animacion_02_libro03 = false;
 				}
 			}
 		}
-	}
-	else {
+	} else {
 		if (rotacion_ejez2 >= 0) {
 			rotacion_ejez2 -= velocidad_rotacion;
-		}
-		else {
+		} else {
 			if (rotacion_ejey2 >= 0) {
 				rotacion_ejey2 -= velocidad_rotacion;
-			}
-			else {
+			} else {
 				if (traslacion_libro03 >= 0) {
 					traslacion_libro03 -= velocidad_traslacion;
-				}
-				else {
+				} else {
 					animacion_02_libro03 = false;
 				}
 			}
@@ -889,25 +875,20 @@ void DoMovement()
 	if (puerta_escritorio) {
 		if (bisagra_escritorio < MAXIMA_APERTURA_ESCRITORIO) {
 			bisagra_escritorio += velocidad_rotacion;
-		}
-		else {
+		} else {
 			if (bisagra_caja < MAXIMA_APERTURA_CAJA) {
 				bisagra_caja += velocidad_rotacion;
-			}
-			else {
+			} else {
 				animacion_04 = false;
 			}
 		}
-	}
-	else {
+	} else {
 		if (bisagra_caja >= 0) {
 			bisagra_caja -= velocidad_rotacion;
-		}
-		else {
+		} else {
 			if (bisagra_escritorio >= 0) {
 				bisagra_escritorio -= velocidad_rotacion;
-			}
-			else {
+			} else {	
 				animacion_04 = false;
 			}
 		}
@@ -920,7 +901,7 @@ void DoMovement()
 	}
 	else {
 		tiempo = 0.0f;
-	}
+	}	
 	//===================================================================
 	//Animación Compleja 02 -> Flama de la Chimenea
 	if (Compleja_02) {
@@ -930,7 +911,7 @@ void DoMovement()
 	else {
 		tiempo2 = 0.0f;
 		Light1 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
-	}
+	}	
 	//===================================================================
 	//Animación Compleja 03 -> Flama de la Estufa, aceite y humo
 	if (Compleja_03) {
@@ -961,7 +942,7 @@ void DoMovement()
 }
 
 // Is called whenever a key is pressed/released via GLFW
-void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode)
+void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode)
 {
 	if (GLFW_KEY_ESCAPE == key && GLFW_PRESS == action)
 	{
@@ -987,8 +968,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 			// Si la puerta está cerrada, abrir
 			if (puertaCerrada) {
 				puertaCerrada = false; // La puerta se cierra
-			}
-			else { // Si la puertaa está abierta, cerrar
+			} else { // Si la puertaa está abierta, cerrar
 				puertaCerrada = true; // La puerta está cerrada nuevamente
 			}
 			animacion_01 = true;
@@ -1013,8 +993,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 		if (key == GLFW_KEY_X && action == GLFW_PRESS) {
 			if (puertaDerCerrada) {
 				puertaDerCerrada = false;
-			}
-			else {
+			} else {
 				puertaDerCerrada = true;
 			}
 			animacion_02_der = true;
@@ -1028,8 +1007,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 		{
 			if (libro_trasladado1) {
 				libro_trasladado1 = false;
-			}
-			else {
+			} else {
 				libro_trasladado1 = true;
 			}
 			animacion_02_libro01 = true;
@@ -1043,8 +1021,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 		{
 			if (libro_trasladado2) {
 				libro_trasladado2 = false;
-			}
-			else {
+			} else {
 				libro_trasladado2 = true;
 			}
 			animacion_02_libro02 = true;
@@ -1058,8 +1035,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 		{
 			if (libro_trasladado3) {
 				libro_trasladado3 = false;
-			}
-			else {
+			} else {
 				libro_trasladado3 = true;
 			}
 			animacion_02_libro03 = true;
@@ -1084,13 +1060,13 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 	//Tecla N para activar la animación Compleja 01
 	if (key == GLFW_KEY_N && action == GLFW_PRESS) {
 		Compleja_01 = !Compleja_01;
-	}
-
+	}	
+	
 	//==================================================================================================
 	//Tecla V para activar la animación Compleja 02
 	if (key == GLFW_KEY_V && action == GLFW_PRESS) {
 		Compleja_02 = !Compleja_02;
-	}
+	}	
 	//==================================================================================================
 	//Tecla M para activar la animación Compleja 03
 	if (key == GLFW_KEY_M && action == GLFW_PRESS) {
@@ -1106,7 +1082,7 @@ void KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mode
 
 
 
-void MouseCallback(GLFWwindow* window, double xPos, double yPos)
+void MouseCallback(GLFWwindow *window, double xPos, double yPos)
 {
 	if (firstMouse)
 	{
