@@ -1,6 +1,8 @@
 #include <iostream>
 #include <cmath>
-
+#include <irrKlang.h>
+using namespace irrklang;
+#pragma comment(lib, "irrKlang.lib")
 // GLEW
 #include <GL/glew.h>
 
@@ -24,6 +26,7 @@
 #include "Camera.h"
 #include "Model.h"
 #include "Texture.h"
+
 
 
 // Function prototypes
@@ -135,6 +138,16 @@ GLfloat lastFrame = 0.0f;  	// Time of last frame
 
 int main()
 {
+	// start the sound engine with default parameters
+	ISoundEngine* engine = createIrrKlangDevice();
+	if (!engine)
+		return 0; // error starting up the engine
+
+	// play some sound stream, looped
+	engine->play2D("musicaAmbiental.mp3", true);
+
+
+	
 	// Init GLFW
 	glfwInit();
 
