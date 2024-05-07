@@ -1,0 +1,110 @@
+newmtl pasted__CubeFBXASC046001SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columna_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 0.00
+newmtl pasted__pasted__pasted__phong7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_hojasarbol.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl pasted__pasted__phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_hojasarbol.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl pasted__pasted__phong7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_hojasarbol.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl pasted__pasted__phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd superior_estufa.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
+Ns 18.00
+newmtl pasted__phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_manzanas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso_interior.png
+Ns 18.00
+newmtl pasted__phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_hojasarbol.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl pasted__phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_islasuperior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl pasted__phong11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_torinf.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_exterior.png
+Ns 18.00
+newmtl pasted__phong12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_torisup.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl pasted__phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd superior_estufa.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
+Ns 18.00
