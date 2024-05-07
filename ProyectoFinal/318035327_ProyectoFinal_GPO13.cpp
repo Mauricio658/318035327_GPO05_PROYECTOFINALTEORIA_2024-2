@@ -39,7 +39,7 @@ const GLuint WIDTH = 1900, HEIGHT = 1200;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
-Camera  camera(glm::vec3(0.0f, 6.0f, 20.0f));
+Camera  camera(glm::vec3(0.0f, 6.0f, 40.0f));
 GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
@@ -113,10 +113,14 @@ const float MAXIMA_APERTURA_CAJA = 82;
 //Variables para la animación compleja 01 -> Movimiento de la flama
 bool Compleja_01 = false;
 float tiempo = 0.0f;
+float transparenciaFlama = 0.0f;
+const float MAXIMA_TRANSPARENCIA_VELA = 0.6f;
 
 //========================================================================
 //Variables para la animación compleja 02 -> Movimiento de la chimenea
 bool Compleja_02 = false;
+float transparenciaChimenea = 0.0f;
+const float MAXIMA_TRANSPARENCIA_CHIMENEA = 0.6f;
 float tiempo2 = 0.0f;
 
 //========================================================================
@@ -124,7 +128,9 @@ float tiempo2 = 0.0f;
 bool Compleja_03 = false;
 float tiempo3 = 0.0f;
 float transparenciaHumo = 0.0f;
+float transparenciaEstufa = 0.0f;
 const float MAXIMA_TRANSPARENCIA = 0.05f;
+const float MAXIMA_TRANSPARENCIA_ESTUFA = 0.6f;
 //========================================================================
 //Variables para la animación sencilla 05  -> Movimiento de la protogema
 bool animacionSencilla_05 = false;
@@ -144,7 +150,7 @@ int main()
 		return 0; // error starting up the engine
 
 	// play some sound stream, looped
-	engine->play2D("musicaAmbiental.mp3", true);
+	engine->play2D("Music/musicaAmbiental.mp3", true);
 
 
 	
@@ -562,7 +568,7 @@ int main()
 		//Vela individual
 		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
 		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		glUniform4f(glGetUniformLocation(animacionCompleja_01.Program, "colorAlpha"), 1.0f, 1.0f, 0.7f, 0.60f);
+		glUniform4f(glGetUniformLocation(animacionCompleja_01.Program, "colorAlpha"), 1.0f, 1.0f, 0.7f, transparenciaFlama);
 		model = glm::mat4(1);
 		glUniform1f(glGetUniformLocation(animacionCompleja_01.Program, "time"), tiempo);
 		model = glm::translate(model, glm::vec3(18.96f, 6.05f, -10.89f));
@@ -615,7 +621,7 @@ int main()
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection)); 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
 		glUniform1f(glGetUniformLocation(animacionCompleja_03.Program, "activaTransparencia"), 0.0);
-		glUniform4f(glGetUniformLocation(animacionCompleja_03.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.60f);
+		glUniform4f(glGetUniformLocation(animacionCompleja_03.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, transparenciaEstufa);
 		model = glm::mat4(1);
 		glUniform1f(glGetUniformLocation(animacionCompleja_03.Program, "time"), tiempo3);
 		model = glm::translate(model, glm::vec3(24.99f, 2.19f, -1.89f));
@@ -636,7 +642,7 @@ int main()
 		glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1f(glGetUniformLocation(animacionCompleja_02.Program, "activaTransparencia"), 0.0);
-		glUniform4f(glGetUniformLocation(animacionCompleja_02.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, 0.60f);
+		glUniform4f(glGetUniformLocation(animacionCompleja_02.Program, "colorAlpha"), 1.0f, 1.0f, 0.0f, transparenciaChimenea);
 		model = glm::mat4(1);
 		glUniform1f(glGetUniformLocation(animacionCompleja_02.Program, "time"), tiempo2);
 		
@@ -911,8 +917,14 @@ void DoMovement()
 	//Animación Compleja 01 -> Movimento de una vela
 	if (Compleja_01) {
 		tiempo = glfwGetTime();
+		if (transparenciaFlama <= MAXIMA_TRANSPARENCIA_VELA) {
+			transparenciaFlama += 0.01f;
+		}
 	}
 	else {
+		if (transparenciaFlama >= 0.0f) {
+			transparenciaFlama -= 0.01f;
+		}
 		tiempo = 0.0f;
 	}	
 	//===================================================================
@@ -920,8 +932,14 @@ void DoMovement()
 	if (Compleja_02) {
 		tiempo2 = glfwGetTime();
 		Light1 = glm::vec3(1.0f, 0.2715f, 0.0f);
+		if (transparenciaChimenea <= MAXIMA_TRANSPARENCIA_CHIMENEA) {
+			transparenciaChimenea += 0.01f;
+		}
 	}
 	else {
+		if (transparenciaChimenea >= 0.0f) {
+			transparenciaChimenea -= 0.01f;
+		}
 		tiempo2 = 0.0f;
 		Light1 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
 	}	
@@ -932,11 +950,19 @@ void DoMovement()
 		if (transparenciaHumo <= MAXIMA_TRANSPARENCIA) {
 			transparenciaHumo += 0.001f;
 		}
+
+		if (transparenciaEstufa <= MAXIMA_TRANSPARENCIA_ESTUFA) {
+			transparenciaEstufa += 0.01f;
+		}
 		Light2 = glm::vec3(1.0f, 0.2715f, 0.0f);
 	}
 	else {
 		if (transparenciaHumo >= 0.0f) {
 			transparenciaHumo -= 0.001f;
+		}
+
+		if (transparenciaEstufa >= 0.0f) {
+			transparenciaEstufa -= 0.01f;
 		}
 		tiempo3 = 0.0f;
 		Light2 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
