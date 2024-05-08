@@ -59,7 +59,7 @@ bool animacion_01 = false;
 bool puertaCerrada = false;
 const float MAXIMA_APERTURA = 75;
 float bisagras_puertas = 0.0f;
-float incremento_bisagras = 0.3f;
+float incremento_bisagras = 0.002f;
 
 //========================================================================
 //Variables para la animación sencilla 02 -> Puertas del Librero
@@ -80,8 +80,8 @@ float rotacion_ejey = 0.0f;
 float rotacion_ejez = 0.0f;
 const float ROTACION_MAXIMA_Y = 90;
 const float INCLINACION_MAXIMA = 15;
-const float velocidad_rotacion = 0.5;
-const float velocidad_traslacion = 0.07;
+const float velocidad_rotacion = 0.005;
+const float velocidad_traslacion = 0.0006;
 const float TRASLACION_MAXIMA = 2.0;
 float traslacion_libro01 = 0.0f;
 
@@ -115,7 +115,7 @@ bool Compleja_01 = false;
 float tiempo = 0.0f;
 float transparenciaFlama = 0.0f;
 const float MAXIMA_TRANSPARENCIA_VELA = 0.6f;
-
+float velocidad_aparicion = 0.0001f;
 //========================================================================
 //Variables para la animación compleja 02 -> Movimiento de la chimenea
 bool Compleja_02 = false;
@@ -131,6 +131,7 @@ float transparenciaHumo = 0.0f;
 float transparenciaEstufa = 0.0f;
 const float MAXIMA_TRANSPARENCIA = 0.05f;
 const float MAXIMA_TRANSPARENCIA_ESTUFA = 0.6f;
+float velocidad_humo = 0.000001f;
 //========================================================================
 //Variables para la animación sencilla 05  -> Movimiento de la protogema
 bool animacionSencilla_05 = false;
@@ -749,14 +750,14 @@ void DoMovement()
 	//Animación para realizar la apertura de la entrada
 	if (puertaCerrada) {
 		if (bisagras_puertas < MAXIMA_APERTURA) { //Si la apertura es menor al máximo
-			bisagras_puertas += incremento_bisagras; //incrementamos las bisagras
+			bisagras_puertas += incremento_bisagras * glfwGetTime(); //incrementamos las bisagras
 		} else {
 			// La animación ha terminado, restablecer la variable
 			animacion_01 = false;
 		}
 	} else {
 		if (bisagras_puertas >= 0) {
-			bisagras_puertas -= incremento_bisagras;
+			bisagras_puertas -= incremento_bisagras * glfwGetTime();
 		} else {
 			// La animación ha terminado, restablecer la variable
 			animacion_01 = false;
@@ -766,14 +767,14 @@ void DoMovement()
 	//Animación para realizar la apertura de la puerta izquierda del librero
 	if (puertaIzqCerrada) {
 		if (bisagras_librero_izq < MAXIMA_APERTURA_LIBRERO_IZQ) { //Si la apertura es menor al máximo
-			bisagras_librero_izq += incremento_bisagras; //incrementamos las bisagras
+			bisagras_librero_izq += incremento_bisagras * glfwGetTime(); //incrementamos las bisagras
 		} else {
 			animacion_02_izq = false;
 		}
 		
 	} else {
 		if (bisagras_librero_izq >= 0) {
-			bisagras_librero_izq -= incremento_bisagras;
+			bisagras_librero_izq -= incremento_bisagras * glfwGetTime();
 		} else {
 			animacion_02_izq = false;
 		}
@@ -783,13 +784,13 @@ void DoMovement()
 	//Animación para realizar la apertura de la puerta derecha del librero
 	if (puertaDerCerrada) {
 		if (bisagras_librero_der < MAXIMA_APERTURA_LIBRERO_DER) { //Si la apertura es menor al máximo
-			bisagras_librero_der += incremento_bisagras; //incrementamos las bisagras
+			bisagras_librero_der += incremento_bisagras * glfwGetTime(); //incrementamos las bisagras
 		} else {
 			animacion_02_der = false;
 		}
 	} else {
 		if (bisagras_librero_der >= 0) {
-			bisagras_librero_der -= incremento_bisagras;
+			bisagras_librero_der -= incremento_bisagras * glfwGetTime();
 		} else {
 			animacion_02_der = false;
 		}
@@ -798,13 +799,13 @@ void DoMovement()
 	//Animación para realizar la el movimiento del libro 01 del librero
 	if (libro_trasladado1) {
 		if (traslacion_libro01 < TRASLACION_MAXIMA) {
-			traslacion_libro01 += velocidad_traslacion;	
+			traslacion_libro01 += velocidad_traslacion * glfwGetTime();
 		} else {
 			if (rotacion_ejey < ROTACION_MAXIMA_Y) {
-				rotacion_ejey += velocidad_rotacion;
+				rotacion_ejey += velocidad_rotacion * glfwGetTime();
 			} else {
 				if (rotacion_ejez < INCLINACION_MAXIMA) {
-					rotacion_ejez += velocidad_rotacion;
+					rotacion_ejez += velocidad_rotacion * glfwGetTime();
 				} else {
 				animacion_02_libro01 = false;
 				}
@@ -812,13 +813,13 @@ void DoMovement()
 		}
 	} else {
 		if (rotacion_ejez >= 0) {
-			rotacion_ejez -= velocidad_rotacion;
+			rotacion_ejez -= velocidad_rotacion * glfwGetTime();
 		} else {
 			if (rotacion_ejey >= 0) {
-				rotacion_ejey -= velocidad_rotacion;
+				rotacion_ejey -= velocidad_rotacion * glfwGetTime();
 			} else {
 				if (traslacion_libro01 >= 0) {
-					traslacion_libro01 -= velocidad_traslacion;
+					traslacion_libro01 -= velocidad_traslacion * glfwGetTime();
 				} else {
 					animacion_02_libro01 = false;
 				}
@@ -829,13 +830,13 @@ void DoMovement()
 	//Animación para realizar la el movimiento del libro 02 del librero
 	if (libro_trasladado2) {
 		if (traslacion_libro02 < TRASLACION_MAXIMA) {
-			traslacion_libro02 += velocidad_traslacion;
+			traslacion_libro02 += velocidad_traslacion * glfwGetTime();
 		} else {
 			if (rotacion_ejey1 < ROTACION_MAXIMA_Y) {
-				rotacion_ejey1 += velocidad_rotacion;
+				rotacion_ejey1 += velocidad_rotacion * glfwGetTime();
 			} else {
 				if (rotacion_ejez1 < INCLINACION_MAXIMA) {
-					rotacion_ejez1 += velocidad_rotacion;
+					rotacion_ejez1 += velocidad_rotacion * glfwGetTime();
 				} else {
 					animacion_02_libro02 = false;
 				}
@@ -843,13 +844,13 @@ void DoMovement()
 		}
 	} else {
 		if (rotacion_ejez1 >= 0) {
-			rotacion_ejez1 -= velocidad_rotacion;
+			rotacion_ejez1 -= velocidad_rotacion * glfwGetTime();
 		} else {
 			if (rotacion_ejey1 >= 0) {
-				rotacion_ejey1 -= velocidad_rotacion;
+				rotacion_ejey1 -= velocidad_rotacion * glfwGetTime();
 			} else {
 				if (traslacion_libro02 >= 0) {
-					traslacion_libro02 -= velocidad_traslacion;
+					traslacion_libro02 -= velocidad_traslacion * glfwGetTime();
 				} else {
 					animacion_02_libro02 = false;
 				}
@@ -858,16 +859,16 @@ void DoMovement()
 	}
 
 	//===================================================================
-	//Animación para realizar la el movimiento del libro 02 del librero
+	//Animación para realizar la el movimiento del libro 03 del librero
 	if (libro_trasladado3) {
 		if (traslacion_libro03 < TRASLACION_MAXIMA) {
-			traslacion_libro03 += velocidad_traslacion;
+			traslacion_libro03 += velocidad_traslacion * glfwGetTime();
 		} else {
 			if (rotacion_ejey2 < ROTACION_MAXIMA_Y) {
-				rotacion_ejey2 += velocidad_rotacion;
+				rotacion_ejey2 += velocidad_rotacion * glfwGetTime();
 			} else {
 				if (rotacion_ejez2 < INCLINACION_MAXIMA) {
-					rotacion_ejez2 += velocidad_rotacion;
+					rotacion_ejez2 += velocidad_rotacion * glfwGetTime();
 				} else {
 					animacion_02_libro03 = false;
 				}
@@ -875,13 +876,13 @@ void DoMovement()
 		}
 	} else {
 		if (rotacion_ejez2 >= 0) {
-			rotacion_ejez2 -= velocidad_rotacion;
+			rotacion_ejez2 -= velocidad_rotacion * glfwGetTime();
 		} else {
 			if (rotacion_ejey2 >= 0) {
-				rotacion_ejey2 -= velocidad_rotacion;
+				rotacion_ejey2 -= velocidad_rotacion * glfwGetTime();
 			} else {
 				if (traslacion_libro03 >= 0) {
-					traslacion_libro03 -= velocidad_traslacion;
+					traslacion_libro03 -= velocidad_traslacion * glfwGetTime();
 				} else {
 					animacion_02_libro03 = false;
 				}
@@ -893,20 +894,20 @@ void DoMovement()
 	//Animación para realizar el movimiento del las puerta del librero y caja fuerte
 	if (puerta_escritorio) {
 		if (bisagra_escritorio < MAXIMA_APERTURA_ESCRITORIO) {
-			bisagra_escritorio += velocidad_rotacion;
+			bisagra_escritorio += velocidad_rotacion * glfwGetTime();
 		} else {
 			if (bisagra_caja < MAXIMA_APERTURA_CAJA) {
-				bisagra_caja += velocidad_rotacion;
+				bisagra_caja += velocidad_rotacion * glfwGetTime();
 			} else {
 				animacion_04 = false;
 			}
 		}
 	} else {
 		if (bisagra_caja >= 0) {
-			bisagra_caja -= velocidad_rotacion;
+			bisagra_caja -= velocidad_rotacion * glfwGetTime();
 		} else {
 			if (bisagra_escritorio >= 0) {
-				bisagra_escritorio -= velocidad_rotacion;
+				bisagra_escritorio -= velocidad_rotacion * glfwGetTime();
 			} else {	
 				animacion_04 = false;
 			}
@@ -918,12 +919,12 @@ void DoMovement()
 	if (Compleja_01) {
 		tiempo = glfwGetTime();
 		if (transparenciaFlama <= MAXIMA_TRANSPARENCIA_VELA) {
-			transparenciaFlama += 0.01f;
+			transparenciaFlama += velocidad_aparicion * glfwGetTime(); 
 		}
 	}
 	else {
 		if (transparenciaFlama >= 0.0f) {
-			transparenciaFlama -= 0.01f;
+			transparenciaFlama -= velocidad_aparicion * glfwGetTime();
 		}
 		tiempo = 0.0f;
 	}	
@@ -933,12 +934,12 @@ void DoMovement()
 		tiempo2 = glfwGetTime();
 		Light1 = glm::vec3(1.0f, 0.2715f, 0.0f);
 		if (transparenciaChimenea <= MAXIMA_TRANSPARENCIA_CHIMENEA) {
-			transparenciaChimenea += 0.01f;
+			transparenciaChimenea += velocidad_aparicion * glfwGetTime(); 
 		}
 	}
 	else {
 		if (transparenciaChimenea >= 0.0f) {
-			transparenciaChimenea -= 0.01f;
+			transparenciaChimenea -= velocidad_aparicion * glfwGetTime();
 		}
 		tiempo2 = 0.0f;
 		Light1 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
@@ -948,21 +949,21 @@ void DoMovement()
 	if (Compleja_03) {
 		tiempo3 = glfwGetTime();
 		if (transparenciaHumo <= MAXIMA_TRANSPARENCIA) {
-			transparenciaHumo += 0.001f;
+			transparenciaHumo += velocidad_humo * glfwGetTime(); 
 		}
 
 		if (transparenciaEstufa <= MAXIMA_TRANSPARENCIA_ESTUFA) {
-			transparenciaEstufa += 0.01f;
+			transparenciaEstufa += velocidad_aparicion * glfwGetTime(); 
 		}
 		Light2 = glm::vec3(1.0f, 0.2715f, 0.0f);
 	}
 	else {
 		if (transparenciaHumo >= 0.0f) {
-			transparenciaHumo -= 0.001f;
+			transparenciaHumo -= velocidad_humo * glfwGetTime();
 		}
 
 		if (transparenciaEstufa >= 0.0f) {
-			transparenciaEstufa -= 0.01f;
+			transparenciaEstufa -= velocidad_aparicion * glfwGetTime();
 		}
 		tiempo3 = 0.0f;
 		Light2 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
