@@ -21,7 +21,7 @@ void main()
     // Obtener la distancia del vértice al centro del objeto
     float distance = length(aPos);
     float y_offset = amplitude_y * sin(time * frequency_y * distance);
-    // Deformación del vértice en los ejes x y z (simulando una leve oscilación)
+    // Deformación del vértice en los ejes x  (simulando una leve oscilación)
     float x_offset = amplitude_xz * sin(time * frequency_xz * distance);
         
     // Aplicar la deformación a la posición del vértice
