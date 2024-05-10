@@ -1,3 +1,85 @@
+newmtl CubeFBXASC046001SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl CubeFBXASC046001SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columna_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 0.00
+newmtl CubeFBXASC046002SG
+illum 4
+Kd 0.07 0.07 0.07
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.02 0.02 0.02
+Ns 0.00
+newmtl CubeFBXASC046006SG
+illum 4
+Kd 0.80 0.22 0.51
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.06 0.13
+Ns 34.00
+newmtl GrassSG
+illum 4
+Kd 0.02 0.57 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.14 0.00
+Ns 34.00
+newmtl PlaneSG
+illum 4
+Kd 0.06 0.80 0.78
+Ka 0.00 0.00 0.00
+Tf 0.98 0.69 0.70
+Ni 1.00
+Ks 0.03 0.40 0.39
+Ns 10.25
+newmtl ShrineSG
+illum 4
+Kd 0.80 0.00 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.00 0.01
+Ns 23.00
+newmtl ShrineSG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 34.00
+newmtl TreeSG
+illum 4
+Kd 0.38 0.22 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.05 0.01
+Ns 0.00
+newmtl TreeSG1
+illum 4
+Kd 0.80 0.12 0.77
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.03 0.19
+Ns 23.00
 newmtl door_Left:phong11SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -3129,6 +3211,30 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_piso.png
 Ns 18.00
+newmtl pasted__CubeFBXASC046006SG
+illum 4
+Kd 0.80 0.22 0.51
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.06 0.13
+Ns 34.00
+newmtl pasted__TreeSG
+illum 4
+Kd 0.38 0.22 0.03
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.09 0.05 0.01
+Ns 0.00
+newmtl pasted__TreeSG1
+illum 4
+Kd 0.80 0.12 0.77
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.20 0.03 0.19
+Ns 23.00
 newmtl pasted__pasted__lambert2SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -3325,6 +3431,85 @@ Tf 1.00 1.00 1.00
 map_Kd textura_humo.png
 Ni 1.00
 Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_humo.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_manzanas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso_interior.png
+Ns 18.00
+newmtl phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_hojasarbol.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_islasuperior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl phong10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_agua.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl phong11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_torinf.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_exterior.png
+Ns 18.00
+newmtl phong12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_torisup.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd superior_estufa.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
 Ns 18.00
 newmtl protogema:pasted__phong33SG
 illum 4

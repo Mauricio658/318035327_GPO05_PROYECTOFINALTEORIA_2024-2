@@ -20,7 +20,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="318035327_ProyectoFinal_GPO13.cpp">
+    <ClCompile Include="318035327_ProyectoFinalTeoria_GPO05.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
