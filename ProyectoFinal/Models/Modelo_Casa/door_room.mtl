@@ -1,3 +1,10 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
 newmtl modelo_Casa:lambert5SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -403,26 +410,6 @@ map_Kd textura_ventana.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl modelo_Casa91:lambert9SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd textura_tejado.png
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks especular_tejado.png
-Ns 18.00
-newmtl modelo_Casa97:lambert9SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd textura_tejado.png
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks especular_tejado.png
-Ns 18.00
 newmtl pasted__pasted__pasted__phong8SG3
 illum 4
 Kd 0.00 0.00 0.00
@@ -472,6 +459,26 @@ map_Kd textura_vidrio.png
 Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
 Ns 18.00
 newmtl pasted__phong6SG15
 illum 4
@@ -561,6 +568,26 @@ Tf 1.00 1.00 1.00
 map_Kd textura_ventana_interior.png
 Ni 1.00
 Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl pasted__phong18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
 Ns 18.00
 newmtl phong6SG
 illum 4
@@ -661,16 +688,6 @@ Ni 1.00
 Ks 0.00 0.00 0.00
 map_Ks especular_marco_interior.png
 Ns 18.00
-newmtl phong17SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd textura_vidrio_ventana.png
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks especular_ventana_vidrio.png
-Ns 18.00
 newmtl phong18SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -682,16 +699,6 @@ Ks 0.00 0.00 0.00
 map_Ks especular_ventana_vidrio.png
 Ns 18.00
 newmtl phong19SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd textura_columnas.png
-Ni 1.00
-Ks 0.00 0.00 0.00
-map_Ks especular_paredes.png
-Ns 18.00
-newmtl phong20SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00

@@ -141,7 +141,13 @@ float proto = 0.0f;
 GLfloat deltaTime = 0.0f;	// Time between current frame and last frame
 GLfloat lastFrame = 0.0f;  	// Time of last frame
 
-
+//========================================================================
+//Variables para la animación 01 del cuarto 2  -> Apertura de la puerta
+bool animacion_01_cuarto02 = false;
+bool puertaCerrada_cuarto02 = false;
+const float APERTURA_CUARTO = 7.4;
+float riel_puerta= 0.0f;
+float incremento_riel = 0.001f;
 
 int main()
 {
@@ -210,37 +216,39 @@ int main()
 	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
 	Model Puerta_Der((char*)"Models/Modelo_Casa/door_Right.obj");
 
-	Model objeto01((char*)"Models/Modelo_Objetos/Objeto_01/objeto_01.obj");
-	Model objeto02((char*)"Models/Modelo_Objetos/Objeto_02/objeto_02.obj");
+	Model objeto01((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_01/objeto_01.obj");
+	Model objeto02((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_02/objeto_02.obj");
 
-	Model objeto03((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03.obj");
-	Model objeto03_Der((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_doorRight.obj");
-	Model objeto03_Izq((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_doorLeft.obj");
-	Model objeto03_Libro01((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro01.obj");
-	Model objeto03_Libro02((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro02.obj");
-	Model objeto03_Libro03((char*)"Models/Modelo_Objetos/Objeto_03/objeto_03_libro03.obj");
+	Model objeto03((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_03/objeto_03.obj");
+	Model objeto03_Der((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_03/objeto_03_doorRight.obj");
+	Model objeto03_Izq((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_03/objeto_03_doorLeft.obj");
+	Model objeto03_Libro01((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_03/objeto_03_libro01.obj");
+	Model objeto03_Libro02((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_03/objeto_03_libro02.obj");
+	Model objeto03_Libro03((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_03/objeto_03_libro03.obj");
 	
-	Model objeto04((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04.obj");
-	Model objeto04_protogema((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_protogema.obj");
-	Model objeto04_flama((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_flama.obj");
-	Model objeto04_Puerta((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_door.obj");
-	Model objeto04_Puerta_Caja((char*)"Models/Modelo_Objetos/Objeto_04/objeto_04_doorCaja.obj");
+	Model objeto04((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_04/objeto_04.obj");
+	Model objeto04_protogema((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_04/objeto_04_protogema.obj");
+	Model objeto04_flama((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_04/objeto_04_flama.obj");
+	Model objeto04_Puerta((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_04/objeto_04_door.obj");
+	Model objeto04_Puerta_Caja((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_04/objeto_04_doorCaja.obj");
 
-	Model objeto05((char*)"Models/Modelo_Objetos/Objeto_05/objeto_05.obj");
-	Model objeto06((char*)"Models/Modelo_Objetos/Objeto_06/objeto_06.obj");
+	Model objeto05((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_05/objeto_05.obj");
+	Model objeto06((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_06/objeto_06.obj");
 
-	Model objeto07((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07.obj");
-	Model objeto07_flama((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_flama.obj");
-	Model objeto07_aceite((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_aceite.obj");
-	Model objeto07_humo((char*)"Models/Modelo_Objetos/Objeto_07/objeto_07_humo.obj");
+	Model objeto07((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_07/objeto_07.obj");
+	Model objeto07_flama((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_07/objeto_07_flama.obj");
+	Model objeto07_aceite((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_07/objeto_07_aceite.obj");
+	Model objeto07_humo((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_07/objeto_07_humo.obj");
 	
-	Model objetoExtra01((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01.obj");
-	Model objetoExtra01_flama((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01_flama.obj");
-	Model objetoExtra02((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_02/objetoExtra_02.obj");
-	Model objetoExtra03((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_03/objetoExtra_03.obj");
-	Model objetoExtra04((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_04/objetoExtra_04.obj");
-	Model objetoExtra05((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_05/objetoExtra_05.obj");
-	Model objetoExtra06((char*)"Models/Modelos_Objetos_Extras/objeto_Extra_06/objetoExtra_06.obj");
+	Model objetoExtra01((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01.obj");
+	Model objetoExtra01_flama((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_01/objetoExtra_01_flama.obj");
+	Model objetoExtra02((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_02/objetoExtra_02.obj");
+	Model objetoExtra03((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_03/objetoExtra_03.obj");
+	Model objetoExtra04((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_04/objetoExtra_04.obj");
+	Model objetoExtra05((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_05/objetoExtra_05.obj");
+	Model objetoExtra06((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_06/objetoExtra_06.obj");
+
+	Model Puerta_Cuarto02((char*)"Models/Modelo_Casa/door_room.obj");
 
 	GLfloat skyboxVertices[] = {
 		// Positions
@@ -409,6 +417,7 @@ int main()
 
 		glm::mat4 model_Bisagra_escritorio(1);//Matriz Temporal para bisagras.
 		glm::mat4 model_Bisagra_caja(1);//Matriz Temporal para bisagras.
+		glm::mat4 model_puerta_cuarto02(1);//Matriz temporal para la puerta del cuarto 02
 
 		//Carga de modelo 
         view = camera.GetViewMatrix();	
@@ -424,6 +433,7 @@ int main()
 		model1_Libro03 = glm::mat4(1);
 		model2_Libro03 = glm::mat4(1);
 		model_Bisagra_escritorio = glm::mat4(1);
+		model_puerta_cuarto02 = glm::mat4(1);
 		model_Bisagra_caja = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		//========================================================================================
@@ -535,7 +545,16 @@ int main()
 		objetoExtra04.Draw(lightingShader);
 		objetoExtra05.Draw(lightingShader);
 		objetoExtra06.Draw(lightingShader);
+		//========================================================================================
+		//Puerta de la entrada del cuarto 02
+		model = glm::mat4(1);
+		model_puerta_cuarto02 = model = glm::translate(model, glm::vec3(-16.46f, 22.57f, -15.65f));//Matriz temporal para el pivote de apertura
+		model = glm::translate(model_puerta_cuarto02, glm::vec3(0.0f, 0.0f,riel_puerta));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		Puerta_Cuarto02.Draw(lightingShader);
+
 		glBindVertexArray(0);
+
 
 		//========================================================================================
 		animacionSencilla_03.Use();
@@ -694,6 +713,7 @@ int main()
 		
 		glBindVertexArray(0);
 		glDisable(GL_BLEND);  //Desactiva el canal alfa
+
 		//========================================================================================
 		// Draw skybox as last
 		glDepthFunc(GL_LEQUAL);  // Change depth function so depth test passes when values are equal to depth buffer's content
@@ -979,6 +999,27 @@ void DoMovement()
 	}
 
 	//===================================================================
+	//Animación para realizar la apertura de la puerta del cuarto 02
+	if (puertaCerrada_cuarto02) {
+		if (riel_puerta < APERTURA_CUARTO) { //Si la apertura es menor al máximo
+			riel_puerta += velocidad_traslacion * glfwGetTime(); //incrementamos las bisagras
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_01_cuarto02 = false;
+		}
+	}
+	else {
+		if (riel_puerta >= 0) {
+			riel_puerta -= velocidad_traslacion * glfwGetTime();
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_01_cuarto02 = false;
+		}
+	}
+
+	//===================================================================
 }
 
 // Is called whenever a key is pressed/released via GLFW
@@ -1117,6 +1158,22 @@ void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode
 	//Tecla B para activar la animación Sencilla 05
 	if (key == GLFW_KEY_B && action == GLFW_PRESS) {
 		animacionSencilla_05 = !animacionSencilla_05;
+	}
+
+	//==================================================================================================
+	//Tecla G para activar la animación 1 -> Apertura de Puertas Principal
+	if (!animacion_01_cuarto02) {
+		if (key == GLFW_KEY_4 && action == GLFW_PRESS)
+		{
+			// Si la puerta está cerrada, abrir
+			if (puertaCerrada_cuarto02) {
+				puertaCerrada_cuarto02 = false; // La puerta se cierra
+			}
+			else { // Si la puertaa está abierta, cerrar
+				puertaCerrada_cuarto02 = true; // La puerta está cerrada nuevamente
+			}
+			animacion_01_cuarto02 = true;
+		}
 	}
 }
 
