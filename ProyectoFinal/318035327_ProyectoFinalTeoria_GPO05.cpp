@@ -48,11 +48,13 @@ bool firstMouse = true;
 // Positions of the point lights
 glm::vec3 pointLightPositions[] = {
 	glm::vec3(-30.74f,2.91f, -10.75f),
-	glm::vec3( 24.99f,2.19f, -1.89f)
+	glm::vec3( 24.99f,2.19f, -1.89f),
+	glm::vec3(8.77f,26.29f, -11.35f)
 };
 
 glm::vec3 Light1 = glm::vec3(0);
 glm::vec3 Light2 = glm::vec3(0);
+glm::vec3 Light3 = glm::vec3(0);
 //========================================================================
 //Variables para la animación sencilla 01 -> Puertas de la Entrada
 bool animacion_01 = false;
@@ -149,6 +151,20 @@ const float APERTURA_CUARTO = 7.4;
 float riel_puerta= 0.0f;
 float incremento_riel = 0.001f;
 
+//========================================================================
+//Variables para la animación 02 y 03 del cuarto 2  -> Apertura de los cajones
+bool animacion_02_cuarto02 = false;
+bool animacion_03_cuarto02 = false;
+bool cajonSup_cuarto02 = false;
+bool cajonInf_cuarto02 = false;
+const float APERTURA_CAJON = 1.35;
+float riel_CajonSup = 0.0f;
+float riel_CajonInf = 0.0f;
+float incremento_cajon = 0.0001f;
+
+//Luz Cuarto
+bool luzCuarto = false;
+
 int main()
 {
 	// start the sound engine with default parameters
@@ -216,6 +232,8 @@ int main()
 	Model Puerta_Izq((char*)"Models/Modelo_Casa/door_Left.obj");
 	Model Puerta_Der((char*)"Models/Modelo_Casa/door_Right.obj");
 
+	//=======================================================================================================
+	//Modelos del primer cuarto
 	Model objeto01((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_01/objeto_01.obj");
 	Model objeto02((char*)"Models/Cuarto_01/Modelo_Objetos/Objeto_02/objeto_02.obj");
 
@@ -247,6 +265,22 @@ int main()
 	Model objetoExtra04((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_04/objetoExtra_04.obj");
 	Model objetoExtra05((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_05/objetoExtra_05.obj");
 	Model objetoExtra06((char*)"Models/Cuarto_01/Modelos_Objetos_Extras/objeto_Extra_06/objetoExtra_06.obj");
+
+	//=======================================================================================================
+	//Modelos del seguno cuarto
+	Model objeto01_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos/Objeto_01/objeto_01.obj");
+	Model objeto02_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos/Objeto_02/objeto_02.obj");
+	Model objeto03_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos/Objeto_03/objeto_03.obj");
+	Model objeto04_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos/Objeto_04/objeto_04.obj");
+	Model objeto04_Cajon((char*)"Models/Cuarto_02/Modelo_Objetos/Objeto_04/objeto_04_cajon.obj");
+	Model objeto05_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos/Objeto_05/objeto_05.obj");
+
+	Model objetoExtra01_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos_Extra/objeto_Extra_01/objetoExtra_01.obj");
+	Model objetoExtra02_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos_Extra/objeto_Extra_02/objetoExtra_02.obj");
+	Model objetoExtra03_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos_Extra/objeto_Extra_03/objetoExtra_03.obj");
+	Model objetoExtra04_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos_Extra/objeto_Extra_04/objetoExtra_04.obj");
+	Model objetoExtra05_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos_Extra/objeto_Extra_05/objetoExtra_05.obj");
+	Model objetoExtra06_Cuarto02((char*)"Models/Cuarto_02/Modelo_Objetos_Extra/objeto_Extra_06/objetoExtra_06.obj");
 
 	Model Puerta_Cuarto02((char*)"Models/Modelo_Casa/door_room.obj");
 
@@ -383,6 +417,19 @@ int main()
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].constant"), 1.0f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].linear"), 3.5f);
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[1].quadratic"), 1.8f);
+
+		// Point light 3 cuarto
+		glm::vec3 lightColor3;
+		lightColor3.x = Light3.x;
+		lightColor3.y = Light3.y;
+		lightColor3.z = Light3.z;
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].position"), pointLightPositions[2].x, pointLightPositions[2].y, pointLightPositions[2].z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].ambient"), lightColor3.x, lightColor3.y, lightColor3.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].diffuse"), lightColor3.x, lightColor3.y, lightColor3.z);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "pointLights[2].specular"), 1.0f, 1.0f, 1.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].constant"), 1.0f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].linear"), 0.14f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "pointLights[2].quadratic"), 0.07f);
 
 		// Set material properties
 		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 16.0f); // Brillantez más suave
@@ -531,20 +578,33 @@ int main()
 		//========================================================================================
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		objeto01.Draw(lightingShader);
-		objeto02.Draw(lightingShader);
-		objeto03.Draw(lightingShader);
-		objeto04.Draw(lightingShader);
-		objeto05.Draw(lightingShader);
-		objeto06.Draw(lightingShader);
-		objeto07.Draw(lightingShader);
+		objeto01.Draw(lightingShader);  
+		objeto02.Draw(lightingShader); 
+		objeto03.Draw(lightingShader); 
+		objeto04.Draw(lightingShader); 
+		objeto05.Draw(lightingShader); 
+		objeto06.Draw(lightingShader); 
+		objeto07.Draw(lightingShader); 
+
+		objetoExtra01.Draw(lightingShader);  
+		objetoExtra02.Draw(lightingShader); 
+		objetoExtra03.Draw(lightingShader); 
+		objetoExtra04.Draw(lightingShader); 
+		objetoExtra05.Draw(lightingShader); 
+		objetoExtra06.Draw(lightingShader);		
 		
-		objetoExtra01.Draw(lightingShader);
-		objetoExtra02.Draw(lightingShader);
-		objetoExtra03.Draw(lightingShader);
-		objetoExtra04.Draw(lightingShader);
-		objetoExtra05.Draw(lightingShader);
-		objetoExtra06.Draw(lightingShader);
+		objeto01_Cuarto02.Draw(lightingShader);
+		objeto02_Cuarto02.Draw(lightingShader);
+		objeto03_Cuarto02.Draw(lightingShader);
+		objeto04_Cuarto02.Draw(lightingShader);
+		objeto05_Cuarto02.Draw(lightingShader);
+		
+		objetoExtra01_Cuarto02.Draw(lightingShader);
+		objetoExtra02_Cuarto02.Draw(lightingShader);
+		objetoExtra03_Cuarto02.Draw(lightingShader);
+		objetoExtra04_Cuarto02.Draw(lightingShader);
+		objetoExtra05_Cuarto02.Draw(lightingShader);
+		objetoExtra06_Cuarto02.Draw(lightingShader);
 		//========================================================================================
 		//Puerta de la entrada del cuarto 02
 		model = glm::mat4(1);
@@ -553,8 +613,22 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Puerta_Cuarto02.Draw(lightingShader);
 
-		glBindVertexArray(0);
+		//========================================================================================
+		//Cajon superior del mueble del cuarto 02
+		model = glm::mat4(1); 
+		model_puerta_cuarto02 = model = glm::translate(model, glm::vec3(30.9f, 18.61f, -16.99f));//Matriz temporal para el pivote de apertura
+		model = glm::translate(model_puerta_cuarto02, glm::vec3(-riel_CajonSup, 0.0f,0.0f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
+		objeto04_Cajon.Draw(lightingShader);
 
+		//========================================================================================
+		//Cajon inferior del mueble del cuarto 02
+		model = glm::mat4(1); 
+		model_puerta_cuarto02 = model = glm::translate(model, glm::vec3(30.96f, 17.11f, -16.99f));//Matriz temporal para el pivote de apertura
+		model = glm::translate(model_puerta_cuarto02, glm::vec3(-riel_CajonInf, 0.0f, 0.0f));   
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model)); 
+		objeto04_Cajon.Draw(lightingShader); 
+		glBindVertexArray(0);
 
 		//========================================================================================
 		animacionSencilla_03.Use();
@@ -628,6 +702,22 @@ int main()
 		model = glm::translate(model, glm::vec3(2.44f, 6.25f, -7.93f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		objeto04_flama.Draw(animacionCompleja_01);
+		//Segundo Cuarto
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(31.73f, 21.0f, -16.61f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(31.51f, 20.8f, -16.94f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);		
+		
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(31.93f, 20.8f, -16.27f));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		objeto04_flama.Draw(animacionCompleja_01);
+
 		glBindVertexArray(0);
 
 		//========================================================================================
@@ -1020,6 +1110,53 @@ void DoMovement()
 	}
 
 	//===================================================================
+	if (luzCuarto) {
+		Light3 = glm::vec3(1.0f, 1.0f, 1.0f);
+	}
+	else {
+		Light3 = glm::vec3(0);//Cuado es solo un valor en los 3 vectores pueden dejar solo una componente
+	}
+
+	//===================================================================
+	//Animación para realizar la apertura del cajon superior del cuarto 02
+	if (cajonSup_cuarto02) {
+		if (riel_CajonSup < APERTURA_CAJON) { //Si la apertura es menor al máximo
+			riel_CajonSup += incremento_cajon * glfwGetTime(); //incrementamos las bisagras
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_02_cuarto02 = false;
+		}
+	}
+	else {
+		if (riel_CajonSup >= 0) {
+			riel_CajonSup -= incremento_cajon * glfwGetTime();
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_02_cuarto02 = false;
+		}
+	}
+	//===================================================================
+	//Animación para realizar la apertura del cajon superior del cuarto 02
+	if (cajonInf_cuarto02) {
+		if (riel_CajonInf < APERTURA_CAJON) { //Si la apertura es menor al máximo
+			riel_CajonInf += incremento_cajon * glfwGetTime(); //incrementamos las bisagras
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_03_cuarto02 = false;
+		}
+	}
+	else {
+		if (riel_CajonInf >= 0) {
+			riel_CajonInf -= incremento_cajon * glfwGetTime();
+		}
+		else {
+			// La animación ha terminado, restablecer la variable
+			animacion_03_cuarto02 = false;
+		}
+	}
 }
 
 // Is called whenever a key is pressed/released via GLFW
@@ -1161,7 +1298,7 @@ void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode
 	}
 
 	//==================================================================================================
-	//Tecla G para activar la animación 1 -> Apertura de Puertas Principal
+	//Tecla 4 para activar la animación  -> Apertura de Puerta del cuarto 02
 	if (!animacion_01_cuarto02) {
 		if (key == GLFW_KEY_4 && action == GLFW_PRESS)
 		{
@@ -1173,6 +1310,41 @@ void KeyCallback(GLFWwindow *window, int key, int scancode, int action, int mode
 				puertaCerrada_cuarto02 = true; // La puerta está cerrada nuevamente
 			}
 			animacion_01_cuarto02 = true;
+		}
+	}
+	//==================================================================================================
+	//Tecla F para pointlight
+	if (key == GLFW_KEY_F && action == GLFW_PRESS) {
+		luzCuarto = !luzCuarto;
+	}
+	//==================================================================================================
+	//Tecla 5 para activar la animación -> Apertura del Cajon SUperior del cuarto 02
+	if (!animacion_02_cuarto02) {
+		if (key == GLFW_KEY_5 && action == GLFW_PRESS)
+		{
+			// Si la puerta está cerrada, abrir
+			if (cajonSup_cuarto02) {
+				cajonSup_cuarto02 = false; // La puerta se cierra
+			}
+			else { // Si la puertaa está abierta, cerrar
+				cajonSup_cuarto02 = true; // La puerta está cerrada nuevamente
+			}
+			animacion_02_cuarto02 = true;
+		}
+	}
+	//==================================================================================================
+	//Tecla 6 para activar la animación -> Apertura del Cajon Inferior del cuarto 02
+	if (!animacion_03_cuarto02) {
+		if (key == GLFW_KEY_6 && action == GLFW_PRESS)
+		{
+			// Si la puerta está cerrada, abrir
+			if (cajonInf_cuarto02) {
+				cajonInf_cuarto02 = false; // La puerta se cierra
+			}
+			else { // Si la puertaa está abierta, cerrar
+				cajonInf_cuarto02 = true; // La puerta está cerrada nuevamente
+			}
+			animacion_03_cuarto02 = true;
 		}
 	}
 }

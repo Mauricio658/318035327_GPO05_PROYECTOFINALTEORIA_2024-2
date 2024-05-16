@@ -1,0 +1,4724 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+newmtl modelo_Casa:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.84 0.84 0.84
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa:lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa:lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columna_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_columna.png
+Ns 18.00
+newmtl modelo_Casa:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
+Ns 18.00
+newmtl modelo_Casa:pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piso.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso.png
+Ns 18.00
+newmtl modelo_Casa:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd piso_interior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso_interior.png
+Ns 18.00
+newmtl modelo_Casa:phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_columna_madera.png
+Ns 18.00
+newmtl modelo_Casa:phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columna_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_columna.png
+Ns 18.00
+newmtl modelo_Casa:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa:phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl modelo_Casa:phong11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
+Ns 18.00
+newmtl modelo_Casa:phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
+Ns 18.00
+newmtl modelo_Casa:phong14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl modelo_Casa2:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa3:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa4:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.84 0.84 0.84
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa4:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa7:phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl modelo_Casa10:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.84 0.84 0.84
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa10:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa22:phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl modelo_Casa25:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.84 0.84 0.84
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa25:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa40:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa43:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa46:pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa46:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa49:pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa49:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa55:pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa55:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa58:pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl modelo_Casa58:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl modelo_Casa70:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa73:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa79:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa82:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl modelo_Casa85:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd piso_interior.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso_interior.png
+Ns 18.00
+newmtl modelo_Casa88:phong14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeeto05_muebleRight:initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl objeeto05_muebleRight:pasted__pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vajilla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl objeeto05_muebleRight:pasted__pasted__phong2SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vajilla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl objeeto05_muebleRight:pasted__phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vajilla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_chimenea_exterior.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vajilla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pluma.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vajilla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_hoja.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_jarron.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Emblem.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_Front_Book.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_1.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_3.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl objeeto05_muebleRight:phong12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Texture_2.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_madera.png
+Ns 18.00
+newmtl objeto01_cama:pasted__phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_almohada.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_exterior.png
+Ns 18.00
+newmtl objeto01_cama:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_madera_cama.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_chimenea.png
+Ns 18.00
+newmtl objeto01_cama:phong1SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_colchon.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
+Ns 18.00
+newmtl objeto01_cama:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_madera_cama.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_chimenea.png
+Ns 18.00
+newmtl objeto01_cama:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_cabecera.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_librero.png
+Ns 18.00
+newmtl objeto01_cama:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_almohada.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_exterior.png
+Ns 18.00
+newmtl objeto01_cama:phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_cobija.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pies_sillon.png
+Ns 18.00
+newmtl objeto01_cama:phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_almohada.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 18.00
+newmtl objeto02_Ropero:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_mueble.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_chimenea.png
+Ns 18.00
+newmtl objeto02_Ropero:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl objeto02_Ropero:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_mueble_02.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objeto02_Ropero:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_vela.png
+Ns 18.00
+newmtl objeto03_libreropequeno:initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro01.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro02.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro03.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro04.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro05.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro06.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro07.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro08.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro09.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro10.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro11.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro12.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro13.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro14.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro15.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro16.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro17.png
+Ni 1.00
+newmtl objeto03_libreropequeno:lambert19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hojas.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro01.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert2SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro01.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro02.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert3SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro02.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro03.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert4SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro03.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro04.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert5SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro04.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro05.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro05.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro06.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro06.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro07.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert8SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro07.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro08.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert9SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro08.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro09.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert10SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro09.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro10.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert11SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro10.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro11.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert12SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro11.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro12.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert13SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro12.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro13.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert14SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro13.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro14.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert15SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro14.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro15.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro15.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro16.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert17SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro16.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro17.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert18SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro17.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hojas.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__lambert19SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hojas.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert2SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro01.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert3SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro02.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert4SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro03.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert5SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro04.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert6SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro05.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert7SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro06.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert8SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro07.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert9SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro08.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert10SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro09.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert11SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro10.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert12SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro11.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert13SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro12.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert14SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro13.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert15SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro14.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert16SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro15.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert17SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro16.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert18SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd libro17.png
+Ni 1.00
+newmtl objeto03_libreropequeno:pasted__pasted__lambert19SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd hojas.png
+Ni 1.00
+newmtl objeto03_libreropequeno:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_mueble.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_chimenea.png
+Ns 18.00
+newmtl objeto03_libreropequeno:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl objeto03_libreropequeno:phong5SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objeto03_libreropequeno:phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_disco.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl objeto03_libreropequeno:phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_mueble_02.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_hoja.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG42
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG43
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG44
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG45
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG46
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG47
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG48
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG49
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG50
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG51
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG52
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG53
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG54
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG55
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG56
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG57
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG58
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG59
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG60
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG61
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG62
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG63
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG64
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG65
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG66
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG67
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG68
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG69
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG70
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG71
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG72
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG73
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG74
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG75
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG76
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG77
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG78
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG79
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG80
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG81
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG82
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG83
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG84
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG85
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG86
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG87
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG88
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG89
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG90
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG91
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG92
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG93
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG94
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG95
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG96
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG97
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG98
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG99
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG100
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG101
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG102
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG103
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG104
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG105
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG106
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG107
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG108
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG109
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG110
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG111
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG112
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG113
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG114
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG115
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG116
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG117
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG118
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG119
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG120
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG121
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG90
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG91
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG92
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG93
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG94
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG95
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG96
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG97
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG98
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG99
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG100
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG101
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG102
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG103
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG104
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG105
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG106
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG107
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG108
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG109
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG110
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG111
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG112
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG113
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG114
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG115
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG116
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG117
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG118
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG119
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG120
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG121
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG122
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG123
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG124
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG125
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG126
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG127
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG128
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG129
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG70
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG71
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG72
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG73
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG74
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG75
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG76
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG77
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG78
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG79
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG80
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_inf:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objeto04_cajon_inf:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_puerta.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG42
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG43
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG44
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG45
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG46
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG47
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG48
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG49
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG50
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG51
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG52
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG53
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG54
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG55
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG56
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG57
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG58
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG59
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG60
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG61
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG62
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG63
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG64
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG65
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG42
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG43
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG44
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG45
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG46
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG47
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG48
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG49
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG50
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG51
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG52
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG53
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG54
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG55
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG56
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG57
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG58
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG59
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG60
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG61
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG62
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG63
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG64
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG65
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG66
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG67
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG68
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG69
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG70
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG71
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG72
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG73
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG74
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG75
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG76
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG77
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG78
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG79
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG80
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG81
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG82
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG83
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG84
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG85
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG86
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG87
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG88
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG89
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG41
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG42
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG43
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG44
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG45
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG46
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG47
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG48
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG49
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG50
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG51
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG52
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG53
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG54
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG55
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG56
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG57
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG58
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG59
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG60
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG61
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG62
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG63
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG64
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG65
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG66
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG67
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG68
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG69
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG31
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG32
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG33
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG34
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG35
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG36
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG37
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG38
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG39
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong30SG40
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:pasted__pasted__pasted__pasted__pasted__pasted__phong30SG30
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_madera_biombo.png
+Ns 18.00
+newmtl objeto04_cajon_sup:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objeto04_cajon_sup:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_puerta.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objeto04_mesa_left:pasted__phong23SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_candelero.png
+Ns 18.00
+newmtl objeto04_mesa_left:pasted__phong24SG1
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vela.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_vela.png
+Ns 18.00
+newmtl objeto04_mesa_left:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objetoExtra01_Candelabro:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vela.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso_interior.png
+Ns 18.00
+newmtl objetoExtra01_Candelabro:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_cajaFuerte.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl objetoExtra01_Candelabro:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_Foco.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja_madera.png
+Ns 18.00
+newmtl objetoExtra_03:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_planta.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl objetoExtra_03:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vela.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objetoExtra_03:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tierra.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_silla.png
+Ns 18.00
+newmtl objetoExtra_04:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd color_hoja.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_interior.png
+Ns 18.00
+newmtl objetoExtra_04:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_mueble.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_interior.png
+Ns 18.00
+newmtl objetoExtra_04:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_cuadro01.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso_interior.png
+Ns 18.00
+newmtl objetoExtra_05:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_marco.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tapiz.png
+Ns 18.00
+newmtl objetoExtra_05:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_cuadro02.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tela_almohada.png
+Ns 18.00
+newmtl objetoExtra_06:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tapete.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_pilares_marco.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piano.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piano.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tecla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piano.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_candelero.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piano.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd madera.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_tecla.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl objetoExtra_06_piano1:phong16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piano.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_reja.png
+Ns 18.00
+newmtl pasted__pasted__pasted__phong8SG3
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong6SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes_interiores.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl pasted__pasted__phong8SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong8SG5
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong8SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__pasted__phong19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl pasted__phong6SG15
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes_interiores.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl pasted__phong6SG17
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes_interiores.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl pasted__phong6SG18
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes_interiores.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl pasted__phong8SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong8SG4
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong8SG9
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong8SG10
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong8SG12
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong14SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana_interior.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl pasted__phong18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl pasted__phong19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl phong6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes_interiores.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl phong7SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_paredes.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl phong8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl phong9SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_pilares.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_columna.png
+Ns 18.00
+newmtl phong10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_pilares.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong11SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_puerta.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_puerta.png
+Ns 18.00
+newmtl phong12SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columna_tejado.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_columna.png
+Ns 18.00
+newmtl phong13SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_piso.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_piso.png
+Ns 18.00
+newmtl phong15SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_exterior.png
+Ns 18.00
+newmtl phong16SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_marco_interior.png
+Ns 18.00
+newmtl phong18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_vidrio_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_ventana_vidrio.png
+Ns 18.00
+newmtl phong19SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_columnas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_paredes.png
+Ns 18.00
+newmtl phong21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textura_ventana.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks especular_tejado.png
+Ns 18.00
